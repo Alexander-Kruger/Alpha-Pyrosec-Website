@@ -1,0 +1,1509 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>
+      About Us | Alpha Pyrosec cc - Fire Protection Specialists Since 1993
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e2e7ff",
+              "surface-bright": "#faf8ff",
+              "inverse-on-surface": "#eef0ff",
+              "outline-variant": "#c5c5d3",
+              "primary-container": "#1e3a8a",
+              "on-background": "#131b2e",
+              "on-primary-fixed": "#00164e",
+              "on-tertiary-fixed-variant": "#6e3900",
+              "tertiary-fixed-dim": "#ffb77d",
+              "primary-fixed": "#dce1ff",
+              "secondary-fixed-dim": "#ffb4ab",
+              "primary-fixed-dim": "#b6c4ff",
+              primary: "#00236f",
+              "on-secondary-fixed-variant": "#93000b",
+              "surface-container-low": "#f2f3ff",
+              "on-secondary": "#ffffff",
+              secondary: "#bb0112",
+              "tertiary-container": "#653400",
+              "surface-dim": "#d2d9f4",
+              "tertiary-fixed": "#ffdcc3",
+              tertiary: "#442100",
+              surface: "#faf8ff",
+              "inverse-surface": "#283044",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#410002",
+              "surface-container": "#eaedff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#fc922b",
+              outline: "#757682",
+              "on-secondary-container": "#fffbff",
+              "on-error-container": "#93000a",
+              "secondary-fixed": "#ffdad6",
+              "secondary-container": "#e02928",
+              "on-surface": "#131b2e",
+              "error-container": "#ffdad6",
+              background: "#faf8ff",
+              "inverse-primary": "#b6c4ff",
+              "on-surface-variant": "#444651",
+              "on-primary-container": "#90a8ff",
+              "surface-tint": "#4059aa",
+              "surface-variant": "#dae2fd",
+              "on-primary-fixed-variant": "#264191",
+              "surface-container-lowest": "#ffffff",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#dae2fd",
+              "on-tertiary-fixed": "#2f1500",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "space-lg": "1.5rem",
+              "space-xl": "2.5rem",
+              margin: "3rem",
+              "space-2xl": "4rem",
+              "gutter-mobile": "1rem",
+              "space-xs": "0.25rem",
+              "space-sm": "0.5rem",
+              "space-md": "1rem",
+              gutter: "1.5rem",
+              "margin-mobile": "1.25rem",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              "headline-sm": ["Inter", "sans-serif"],
+              "label-lg": ["Inter", "sans-serif"],
+              "headline-lg": ["Inter", "sans-serif"],
+              "headline-md": ["Inter", "sans-serif"],
+              "label-md": ["Inter", "sans-serif"],
+              "display-mobile": ["Inter", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "body-lg": ["Inter", "sans-serif"],
+              "label-technical": ["Inter", "monospace"],
+              "headline-lg-mobile": ["Inter", "sans-serif"],
+              "body-sm": ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-primary pb-24 md:pb-0"
+  >
+    <!-- Toast Notification -->
+    <div
+      class="fixed top-24 right-5 z-[100] transition-all duration-300 transform translate-y-[-20px] opacity-0 pointer-events-none bg-primary text-on-primary px-4 py-3 rounded-lg shadow-2xl flex items-center gap-3 border border-primary-container max-w-sm"
+      id="toast"
+    >
+      <span
+        class="material-symbols-outlined text-secondary-fixed text-xl"
+        id="toast-icon"
+        >check_circle</span
+      >
+      <div>
+        <div
+          class="font-headline-sm text-sm font-bold leading-tight"
+          id="toast-title"
+        >
+          Draft Copied!
+        </div>
+        <div
+          class="font-label-technical text-xs text-primary-fixed leading-tight mt-0.5"
+          id="toast-desc"
+        >
+          Inquiry template copied to clipboard.
+        </div>
+      </div>
+    </div>
+    <!-- Desktop Header -->
+    <header
+      class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-b border-surface-container shadow-sm"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-4 md:px-gutter flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <a
+            class="flex flex-col hover:opacity-90 transition-opacity"
+            href="index.html"
+          >
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold"
+                >ALPHA PYROSEC</span
+              >
+              <span
+                class="font-label-technical text-label-technical text-tertiary-container bg-tertiary-fixed px-space-xs py-0.5 rounded font-bold"
+                >EST. 1993</span
+              >
+            </div>
+            <span
+              class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-wider text-[11px]"
+              >Fire Protection Specialists cc</span
+            >
+          </a>
+        </div>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-space-lg">
+          <a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            aria-current="page"
+            class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary py-space-xs"
+            href="about.html"
+            >About Us</a
+          >
+          <a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs"
+            href="services.html"
+            >Services &amp; Portfolio</a
+          >
+          <a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-space-xs"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+        <!-- Desktop CTA & Phone -->
+        <div class="hidden md:flex items-center gap-space-md shrink-0">
+          <button
+            class="inline-flex items-center gap-space-xs px-space-md py-2 rounded bg-surface-container-low text-primary hover:bg-surface-container transition-colors border border-surface-container cursor-pointer"
+            onclick="handlePhoneClick(this)"
+            title="Click to copy phone number (+27 11 873 7593)"
+          >
+            <span class="material-symbols-outlined text-sm text-secondary"
+              >call</span
+            >
+            <span
+              class="font-label-technical text-label-technical text-on-surface-variant"
+              >TEL:</span
+            >
+            <span
+              class="font-label-lg text-label-lg text-primary tracking-tight font-semibold"
+              >+27 (0)11 873-7593</span
+            >
+          </button>
+          <button
+            class="inline-flex items-center justify-center gap-2 px-space-lg py-2.5 rounded bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-sm font-semibold cursor-pointer"
+            onclick="copyDraftEmail(this)"
+          >
+            <span class="material-symbols-outlined text-sm">content_copy</span>
+            <span>Copy Draft Email</span>
+          </button>
+        </div>
+        <!-- Mobile Top Actions -->
+        <div class="flex md:hidden items-center gap-2">
+          <button
+            aria-label="Call Alpha Pyrosec"
+            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary cursor-pointer"
+            onclick="handlePhoneClick(this)"
+            title="Copy phone number"
+          >
+            <span class="material-symbols-outlined text-lg">call</span>
+          </button>
+          <button
+            class="px-3 py-1.5 rounded bg-secondary text-on-secondary font-label-technical text-xs font-semibold cursor-pointer inline-flex items-center gap-1"
+            onclick="copyDraftEmail(this)"
+          >
+            <span class="material-symbols-outlined text-xs">content_copy</span>
+            <span>Copy Draft</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Wrapper -->
+    <main class="w-full pt-20 bg-surface">
+      <!-- 1. Hero Section: Split-Screen High-Impact Design -->
+      <section
+        class="relative bg-gradient-to-b from-surface-container-low via-surface to-surface px-4 md:px-gutter py-12 md:py- space-2xl overflow-hidden border-b border-surface-container"
+      >
+        <div
+          class="absolute inset-0 opacity-30 pointer-events-none bg-[radial-gradient(#90a8ff_1px,transparent_1px)] [background-size:24px_24px]"
+        ></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+          >
+            <!-- Left Column: Narrative & Stats -->
+            <div class="lg:col-span-7 flex flex-col gap-6">
+              <div>
+                <span
+                  class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-xs uppercase font-extrabold tracking-wider border border-tertiary-container/20"
+                >
+                  <span
+                    class="material-symbols-outlined text-base text-secondary"
+                    >verified</span
+                  >
+                  ESTABLISHED 1993 // SANS COMPLIANT // SABS / ASIB / SAQCC-FIRE
+                  REGISTERED
+                </span>
+              </div>
+              <div class="space-y-4">
+                <h1
+                  class="font-display text-3xl sm:text-4xl lg:text-display text-primary tracking-tight font-extrabold leading-tight"
+                >
+                  Three Decades of Engineering Precision &amp; Fire Defense
+                </h1>
+                <p
+                  class="font-body-lg text-base sm:text-body-lg text-on-surface-variant leading-relaxed"
+                >
+                  Founded in 1993, Alpha Pyrosec cc has evolved from heavy
+                  mining and industrial safety into South Africa's benchmark
+                  turnkey fire protection authority. We engineer, deploy, and
+                  maintain mission-critical suppression systems—protecting vital
+                  infrastructure where failure is never an option.
+                </p>
+                <p
+                  class="font-body-md text-sm sm:text-body-md text-on-surface-variant/90 leading-relaxed"
+                >
+                  We have spearheaded the paradigm shift from obsolete
+                  transactional box-checking to proactive, audit-proof turnkey
+                  safety. By housing 100% of our design, installation, and
+                  compliance certification in-house, we eliminate contractor
+                  liability gaps and ensure permanent asset defensibility.
+                </p>
+              </div>
+              <!-- Prominent Stat Blocks -->
+              <div class="grid grid-cols-3 gap-3 sm:gap-4 pt-2">
+                <div
+                  class="bg-surface-container-lowest p-4 rounded-xl border border-surface-container shadow-sm flex flex-col justify-between"
+                >
+                  <span
+                    class="font-display text-2xl sm:text-4xl text-primary font-black tracking-tight"
+                    >30+</span
+                  >
+                  <span
+                    class="font-label-md text-xs sm:text-sm text-on-surface-variant font-medium mt-1"
+                    >Years Operational</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase mt-0.5"
+                    >Est. 1993</span
+                  >
+                </div>
+                <div
+                  class="bg-surface-container-lowest p-4 rounded-xl border border-surface-container shadow-sm flex flex-col justify-between"
+                >
+                  <span
+                    class="font-display text-2xl sm:text-4xl text-secondary font-black tracking-tight"
+                    >100%</span
+                  >
+                  <span
+                    class="font-label-md text-xs sm:text-sm text-on-surface-variant font-medium mt-1"
+                    >In-House Force</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase mt-0.5"
+                    >Zero Subcontractors</span
+                  >
+                </div>
+                <div
+                  class="bg-surface-container-lowest p-4 rounded-xl border border-surface-container shadow-sm flex flex-col justify-between"
+                >
+                  <span
+                    class="font-display text-2xl sm:text-4xl text-primary font-black tracking-tight"
+                    >0%</span
+                  >
+                  <span
+                    class="font-label-md text-xs sm:text-sm text-on-surface-variant font-medium mt-1"
+                    >Collateral Damage</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase mt-0.5"
+                    >Clean Agent Spec</span
+                  >
+                </div>
+              </div>
+              <!-- CTAs inside hero -->
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <button
+                  class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-secondary text-on-secondary font-label-lg font-bold hover:bg-secondary-container transition-all shadow-sm cursor-pointer"
+                  onclick="copyDraftEmail(this)"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >content_copy</span
+                  >
+                  <span>Copy Draft Email</span>
+                </button>
+                <a
+                  class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-surface-container text-primary font-label-lg font-bold hover:bg-surface-container-high transition-colors"
+                  href="services.html"
+                >
+                  <span class="material-symbols-outlined text-base"
+                    >dashboard_customize</span
+                  >
+                  <span>View Engineering Scope</span>
+                </a>
+              </div>
+            </div>
+            <!-- Right Column: Hero Showcase Image Card -->
+            <div class="lg:col-span-5">
+              <div
+                class="relative bg-surface-container-lowest rounded-2xl overflow-hidden border border-surface-container shadow-xl"
+              >
+                <div
+                  class="relative aspect-[4/5] sm:aspect-[4/4.5] lg:aspect-[4/5] w-full overflow-hidden"
+                >
+                  <img
+                    alt="Alpha Pyrosec Engineering Field Team in Front of 525V Switchgear Enclosure"
+                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbxPL0evRU3ges-s6tg4FwdoKeGGZyFUzAXSH4D2F8SKL9yseOomBdnk81mFULls7i87M_HDfNj_fVlEO3u8jjo9vPcYqol8jVFzsRyHlSksG6YHuhPKX6mGUeOgf_zGeE0057h8JYMyAlBoV77tg9SBStgfD4amsLs3Ml9_4AGRopJlQEf3nC6rjvs4N1RYva9gSESvSAFbWXyrPyeSiEOvKjrv5I8kFc3RXcJmUhAsGPWHXh9NyvSa2X1iGPFeE"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-transparent"
+                  ></div>
+                  <!-- Floating Accreditations Over Image -->
+                  <div
+                    class="absolute top-4 left-4 right-4 flex justify-between items-start"
+                  >
+                    <span
+                      class="bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1 rounded font-label-technical text-xs font-bold text-primary shadow-sm flex items-center gap-1.5 border border-primary/10"
+                    >
+                      <span
+                        class="material-symbols-outlined text-sm text-secondary"
+                        >shield</span
+                      >
+                      DIRECT FIELD CREW
+                    </span>
+                    <span
+                      class="bg-secondary/90 text-on-secondary backdrop-blur-md px-3 py-1 rounded font-label-technical text-xs font-bold shadow-sm"
+                    >
+                      525V MCC CERTIFIED
+                    </span>
+                  </div>
+                  <!-- Overlay Bottom Content -->
+                  <div
+                    class="absolute bottom-0 left-0 right-0 p-6 text-on-primary space-y-2"
+                  >
+                    <div
+                      class="flex items-center gap-2 text-tertiary-fixed text-xs font-label-technical font-bold uppercase tracking-wider"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+                      ></span>
+                      Verified Full-Time Personnel
+                    </div>
+                    <h3
+                      class="text-xl font-headline-sm font-bold text-white tracking-tight"
+                    >
+                      On-Site Engineering Execution Team
+                    </h3>
+                    <p
+                      class="text-xs text-surface-container-low/90 leading-relaxed font-body-sm"
+                    >
+                      Directly appointed field technicians command turnkey
+                      switchgear protection, clean agent commissioning, and
+                      heavy-hazard industrial sign-offs nationwide.
+                    </p>
+                    <div
+                      class="pt-2 flex flex-wrap gap-2 text-[11px] font-label-technical"
+                    >
+                      <span
+                        class="bg-white/10 px-2 py-0.5 rounded backdrop-blur-sm border border-white/20"
+                        >OHS ACT 16(2)</span
+                      >
+                      <span
+                        class="bg-white/10 px-2 py-0.5 rounded backdrop-blur-sm border border-white/20"
+                        >SAQCC-D&amp;GS REGISTERED</span
+                      >
+                      <span
+                        class="bg-white/10 px-2 py-0.5 rounded backdrop-blur-sm border border-white/20"
+                        >SANS 14520 CLEARED</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2a. Field Technical Legacy Showcase -->
+      <section class="max-w-7xl mx-auto px-4 md:px-gutter py-16 w-full">
+        <div class="space-y-10">
+          <!-- Header -->
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-container pb-6"
+          >
+            <div class="space-y-2 max-w-2xl">
+              <span
+                class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-wider inline-flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >precision_manufacturing</span
+                >
+                THE ALPHA PYROSEC FORCE
+              </span>
+              <h2
+                class="font-headline-lg text-2xl sm:text-headline-lg text-primary tracking-tight font-extrabold"
+              >
+                Direct Field Technical Legacy
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Every Alpha Pyrosec specialist on site is a permanent, certified
+                team member equipped with deep domain expertise in hazardous
+                electrical infrastructure and life safety.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span
+                class="inline-flex items-center gap-1 text-xs font-label-technical font-bold text-primary bg-surface-container px-3 py-1.5 rounded"
+              >
+                <span class="material-symbols-outlined text-sm text-secondary"
+                  >verified_user</span
+                >
+                100% Direct Employment Guarantee
+              </span>
+            </div>
+          </div>
+          <!-- 3 Real Photo Field Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Card 1: Team Solidarity -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col"
+            >
+              <div class="relative h-64 overflow-hidden bg-surface-container">
+                <img
+                  alt="Alpha Pyrosec Lead Technicians On-Site"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbxPL0evRU3ges-s6tg4FwdoKeGGZyFUzAXSH4D2F8SKL9yseOomBdnk81mFULls7i87M_HDfNj_fVlEO3u8jjo9vPcYqol8jVFzsRyHlSksG6YHuhPKX6mGUeOgf_zGeE0057h8JYMyAlBoV77tg9SBStgfD4amsLs3Ml9_4AGRopJlQEf3nC6rjvs4N1RYva9gSESvSAFbWXyrPyeSiEOvKjrv5I8kFc3RXcJmUhAsGPWHXh9NyvSa2X1iGPFeE"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-primary/90 text-on-primary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
+                >
+                  SOLIDARITY &amp; CRAFT
+                </div>
+              </div>
+              <div class="p-6 flex flex-col justify-between flex-1 gap-4">
+                <div class="space-y-2">
+                  <span
+                    class="font-label-technical text-xs text-outline font-bold uppercase"
+                    >Field Unit 01 // Collective Accountability</span
+                  >
+                  <h3 class="font-headline-sm text-lg font-bold text-primary">
+                    In-House Technical Lineage
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Decades of combined site experience in mining,
+                    petrochemical, and manufacturing substations. Zero
+                    sub-contracting ensures total adherence to safe operating
+                    procedures and single-source accountability.
+                  </p>
+                </div>
+                <div
+                  class="pt-3 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+                >
+                  <span class="text-on-surface-variant">PERSONNEL</span>
+                  <span class="font-bold text-primary"
+                    >Directly Employed &amp; Vetted</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 2: Substation Deployment -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col"
+            >
+              <div class="relative h-64 overflow-hidden bg-surface-container">
+                <img
+                  alt="Gantry &amp; 525V Flux Handling MCC Substation Deployment"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj-GDHx0Dr3B49xvrHhFC4F505VU-nFCj5-3Wg63Sjm_jnUdlmGTwb9s7ZlTm5nJnYdMK8H_XPsT77xZNr8oVdq0aW-pRrrSEEsEQpUA1jZb2jd6tbR792HOoiA_rKgqcDY6kWCl-ujmWcikPNoUEfY36XuTFTHcyBWG9A8OQ8rEu_mgRTY8Xh9tmw9n9wFKbzvlpK82vZa9aWod6_E6Ro8EYFxxtfHWHAN2D9Si_CcZmW3R2UznP7i6IJL7C6vgep"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-secondary/90 text-on-secondary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
+                >
+                  HIGH VOLTAGE MCC
+                </div>
+              </div>
+              <div class="p-6 flex flex-col justify-between flex-1 gap-4">
+                <div class="space-y-2">
+                  <span
+                    class="font-label-technical text-xs text-outline font-bold uppercase"
+                    >Field Unit 02 // Critical Substation Protection</span
+                  >
+                  <h3 class="font-headline-sm text-lg font-bold text-primary">
+                    525V Switchgear Deployment
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Specialized execution on live motor control centers (MCC),
+                    gaseous suppression valve manifolds, and high-consequence
+                    conduits without triggering costly production stoppages or
+                    false alarms.
+                  </p>
+                </div>
+                <div
+                  class="pt-3 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+                >
+                  <span class="text-on-surface-variant">SAFETY STANDARD</span>
+                  <span class="font-bold text-secondary"
+                    >SANS 14520 Cleared</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 3: Addressable Diagnostic -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col"
+            >
+              <div class="relative h-64 overflow-hidden bg-surface-container">
+                <img
+                  alt="Precision Addressable Fire Alarm Diagnostic and Multi-Loop Interface"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMtCW3wusx8k7Y-H7kDTOFzYYH21rf-dxbt1nl5HDs5fhg_uvqPR2BLuNlus4Xq00LSg5B_-oYW6EFDwdiJYaNBVnIPTYcOUWd90NRvWVamdjYMAZRGr3Cn4gEzbSPP3mW2SbBT_dz96G5x4VWfaiwnj_ng0q0raWwxYjNh2ZUU-E0efWzfIlOU8cqMPn0485IQplQtJ9NId2pGB1Jw5yqmKj-Ycw36bRvtezUAWFhahhLcHltGn5TwECsibESHe4"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
+                >
+                  DIAGNOSTIC PRECISION
+                </div>
+              </div>
+              <div class="p-6 flex flex-col justify-between flex-1 gap-4">
+                <div class="space-y-2">
+                  <span
+                    class="font-label-technical text-xs text-outline font-bold uppercase"
+                    >Field Unit 03 // Addressable Calibration</span
+                  >
+                  <h3 class="font-headline-sm text-lg font-bold text-primary">
+                    Control Interface Rigor
+                  </h3>
+                  <p
+                    class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    Multimeter diagnostic calibration, analog addressable smoke
+                    loop validation, and solid-state actuator testing. We
+                    certify millisecond response reliability for
+                    mission-critical industrial facilities.
+                  </p>
+                </div>
+                <div
+                  class="pt-3 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+                >
+                  <span class="text-on-surface-variant"
+                    >CALIBRATION PROTOCOL</span
+                  >
+                  <span class="font-bold text-primary"
+                    >SANS 10139 &amp; 369 Sign-Off</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2b. Core Operational Pillars -->
+      <section
+        class="w-full bg-surface-container-low py-16 border-y border-surface-container"
+      >
+        <div class="max-w-7xl mx-auto px-4 md:px-gutter">
+          <div class="max-w-2xl mb-12">
+            <span
+              class="font-label-technical text-label-technical text-primary font-bold uppercase tracking-wider inline-flex items-center gap-1.5"
+            >
+              <span
+                class="material-symbols-outlined text-sm text-tertiary-container"
+                >architecture</span
+              >
+              OPERATIONAL FOUNDATION
+            </span>
+            <h2
+              class="font-headline-lg text-2xl sm:text-headline-lg text-primary tracking-tight font-extrabold mt-1"
+            >
+              Engineering Safeguards Without Friction
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              True fire safety is measured not merely during an alarm event, but
+              by frictionless regulatory compliance, continuous plant uptime,
+              and total lifecycle accountability.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Pillar 1 -->
+            <div
+              class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group"
+            >
+              <div class="h-1.5 w-full bg-primary absolute top-0 left-0"></div>
+              <div class="space-y-4">
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"
+                >
+                  <span class="material-symbols-outlined text-2xl"
+                    >verified</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-label-technical text-xs text-outline uppercase font-semibold"
+                  >
+                    PILLAR 01 // MANDATE
+                  </div>
+                  <h3
+                    class="font-headline-sm text-lg sm:text-xl font-bold text-primary mt-1"
+                  >
+                    100% Audit-Ready Compliance
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Zero compliance ambiguity. Every system designed, serviced, or
+                  retrofitted conforms strictly to SANS 10400-T, SANS 14520, and
+                  ASIB 11th Edition standards. We issue formal Certificates of
+                  Compliance (CoC) that stand up under rigorous insurance
+                  underwriter audits.
+                </p>
+              </div>
+              <div
+                class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+              >
+                <span class="text-on-surface-variant font-medium"
+                  >INSURANCE RECOGNITION</span
+                >
+                <span class="text-primary font-bold"
+                  >100% Claim Defensibility</span
+                >
+              </div>
+            </div>
+            <!-- Pillar 2 -->
+            <div
+              class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group"
+            >
+              <div
+                class="h-1.5 w-full bg-secondary absolute top-0 left-0"
+              ></div>
+              <div class="space-y-4">
+                <div
+                  class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary"
+                >
+                  <span class="material-symbols-outlined text-2xl"
+                    >electric_bolt</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-label-technical text-xs text-outline uppercase font-semibold"
+                  >
+                    PILLAR 02 // EFFICIENCY
+                  </div>
+                  <h3
+                    class="font-headline-sm text-lg sm:text-xl font-bold text-primary mt-1"
+                  >
+                    The Zero-Downtime Mandate
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Fire defense must not impede industrial throughput. By
+                  deploying non-conductive gaseous clean agents and performing
+                  hot-work isolation protocols, our installations protect
+                  sensitive high-voltage substations and server hubs without
+                  costly plant shutdown.
+                </p>
+              </div>
+              <div
+                class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+              >
+                <span class="text-on-surface-variant font-medium"
+                  >FACILITY IMPACT</span
+                >
+                <span class="text-secondary font-bold"
+                  >Zero Plant Interruption</span
+                >
+              </div>
+            </div>
+            <!-- Pillar 3 -->
+            <div
+              class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl border border-surface-container shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden group"
+            >
+              <div
+                class="h-1.5 w-full bg-tertiary-container absolute top-0 left-0"
+              ></div>
+              <div class="space-y-4">
+                <div
+                  class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary-container"
+                >
+                  <span class="material-symbols-outlined text-2xl"
+                    >handshake</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="font-label-technical text-xs text-outline uppercase font-semibold"
+                  >
+                    PILLAR 03 // PARTNERSHIP
+                  </div>
+                  <h3
+                    class="font-headline-sm text-lg sm:text-xl font-bold text-primary mt-1"
+                  >
+                    The "Placed Partner" Advantage
+                  </h3>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  We reject transactional, once-off maintenance. Alpha Pyrosec
+                  operates as a dedicated extension of your risk engineering
+                  department—conducting scheduled predictive audits, continuous
+                  staff training, and 24/7 rapid standby response.
+                </p>
+              </div>
+              <div
+                class="pt-4 mt-4 border-t border-surface-container flex items-center justify-between text-xs font-label-technical"
+              >
+                <span class="text-on-surface-variant font-medium"
+                  >LIFECYCLE APPROACH</span
+                >
+                <span class="text-tertiary-container font-bold"
+                  >Dedicated Risk Partner</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3. Executive & Technical Leadership Grid (3 Profiles Only) -->
+      <section class="max-w-7xl mx-auto px-4 md:px-gutter py-16 w-full">
+        <div class="space-y-10">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-6"
+          >
+            <div>
+              <span
+                class="font-label-technical text-label-technical text-secondary uppercase font-bold tracking-wider inline-flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm">badge</span>
+                GOVERNANCE &amp; ACCOUNTABILITY
+              </span>
+              <h2
+                class="font-headline-lg text-2xl sm:text-headline-lg text-primary tracking-tight font-extrabold mt-1"
+              >
+                Executive &amp; Technical Leadership
+              </h2>
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-md"
+            >
+              Direct operational oversight with deep engineering lineage,
+              rigorous financial stewardship, and legal safety sign-off
+              authority under the South African OHS Act.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Leader 1: Belinda Dos Santos -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-surface-container shadow-sm flex flex-col justify-between gap-6 hover:shadow-md transition-shadow"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-xl font-extrabold border border-primary/10"
+                  >
+                    BD
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-xl font-bold text-primary">
+                      Belinda Dos Santos
+                    </h3>
+                    <div
+                      class="font-label-technical text-xs text-secondary font-bold uppercase mt-0.5"
+                    >
+                      Chief Executive Officer (CEO)
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Steering strategic executive leadership, corporate governance,
+                  and nationwide turnkey expansion. Belinda drives long-term
+                  commercial sustainability, certified vendor compliance, and
+                  transparent financial stewardship across all engineering
+                  operations.
+                </p>
+              </div>
+              <div
+                class="pt-3 border-t border-surface-container flex flex-col gap-2"
+              >
+                <span
+                  class="font-label-technical text-[11px] text-outline uppercase font-semibold"
+                  >DIRECT COMM CHANNEL</span
+                >
+                <a
+                  class="font-label-technical text-xs text-primary hover:underline font-semibold flex items-center gap-1.5"
+                  href="mailto:belinda@alphapyro.co.za"
+                >
+                  <span class="material-symbols-outlined text-sm text-secondary"
+                    >mail</span
+                  >
+                  belinda@alphapyro.co.za
+                </a>
+              </div>
+            </div>
+            <!-- Leader 2: Rudie Kruger -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-surface-container shadow-sm flex flex-col justify-between gap-6 hover:shadow-md transition-shadow"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-xl font-extrabold border border-primary/10"
+                  >
+                    RK
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-xl font-bold text-primary">
+                      Rudie Kruger
+                    </h3>
+                    <div
+                      class="font-label-technical text-xs text-secondary font-bold uppercase mt-0.5"
+                    >
+                      Commercial &amp; Compliance Director
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Leading national corporate development and technical code
+                  adherence. Rudie interfaces directly with corporate insurance
+                  risk assessors, municipal fire departments, and architectural
+                  consultancies to ensure flawless project execution.
+                </p>
+              </div>
+              <div
+                class="pt-3 border-t border-surface-container flex flex-col gap-2"
+              >
+                <span
+                  class="font-label-technical text-[11px] text-outline uppercase font-semibold"
+                  >DIRECT COMM CHANNEL</span
+                >
+                <a
+                  class="font-label-technical text-xs text-primary hover:underline font-semibold flex items-center gap-1.5"
+                  href="mailto:rudie@alphapyro.co.za"
+                >
+                  <span class="material-symbols-outlined text-sm text-secondary"
+                    >mail</span
+                  >
+                  rudie@alphapyro.co.za
+                </a>
+              </div>
+            </div>
+            <!-- Leader 3: Thamanyane Ezekia Mokati -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-surface-container shadow-sm flex flex-col justify-between gap-6 hover:shadow-md transition-shadow"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm text-xl font-extrabold border border-secondary/10"
+                  >
+                    TM
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-xl font-bold text-primary">
+                      Thamanyane Ezekia Mokati
+                    </h3>
+                    <div
+                      class="font-label-technical text-xs text-secondary font-bold uppercase mt-0.5"
+                    >
+                      Section 16(2) Appointee &amp; Ops Lead
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Holding statutory legal appointments under South Africa's OHS
+                  Act 85 of 1993. Thamanyane commands on-site execution, crew
+                  safety protocols, and rigorous system field sign-offs with
+                  total operational authority.
+                </p>
+              </div>
+              <div
+                class="pt-3 border-t border-surface-container flex flex-col gap-2"
+              >
+                <span
+                  class="font-label-technical text-[11px] text-outline uppercase font-semibold"
+                  >STATUTORY FOCUS</span
+                >
+                <span
+                  class="font-label-technical text-xs text-on-surface-variant font-semibold flex items-center gap-1.5"
+                >
+                  <span class="material-symbols-outlined text-sm text-primary"
+                    >gavel</span
+                  >
+                  OHS Act 85 of 1993 // Field Assurance
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. Technical Standards & Compliance Framework Matrix -->
+      <section
+        class="w-full bg-surface-container-low py-16 border-t border-surface-container"
+      >
+        <div class="max-w-7xl mx-auto px-4 md:px-gutter flex flex-col gap-8">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-4"
+          >
+            <div>
+              <span
+                class="font-label-technical text-label-technical text-primary font-bold uppercase tracking-wider inline-flex items-center gap-1.5"
+              >
+                <span class="material-symbols-outlined text-sm">gavel</span>
+                REGULATORY BENCHMARKS
+              </span>
+              <h2
+                class="font-headline-lg text-2xl sm:text-headline-lg text-primary tracking-tight font-extrabold mt-1"
+              >
+                Compliance &amp; Code Specifications
+              </h2>
+            </div>
+            <div
+              class="inline-flex items-center gap-2 bg-surface-container-highest px-3.5 py-1.5 rounded font-label-technical text-xs text-primary font-bold"
+            >
+              <span class="material-symbols-outlined text-base text-secondary"
+                >verified_user</span
+              >
+              INSURANCE-GRADE SPECIFICATIONS
+            </div>
+          </div>
+          <!-- Specifications Matrix -->
+          <div
+            class="bg-surface-container-lowest rounded-xl overflow-hidden border border-surface-container shadow-sm"
+          >
+            <div
+              class="bg-primary text-on-primary p-4 hidden md:grid md:grid-cols-12 gap-4 font-label-technical text-xs uppercase tracking-wider font-bold"
+            >
+              <div class="md:col-span-3">Standard / Code</div>
+              <div class="md:col-span-6">Scope of Engineering Application</div>
+              <div class="md:col-span-3 text-right">Regulatory Status</div>
+            </div>
+            <div class="divide-y divide-surface-container">
+              <!-- Row 1: SANS 10400-T -->
+              <div
+                class="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center hover:bg-surface-container-low transition-colors"
+              >
+                <div class="md:col-span-3">
+                  <span
+                    class="font-headline-sm text-base sm:text-lg font-bold text-primary block"
+                    >SANS 10400-T</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase"
+                    >National Building Regulations</span
+                  >
+                </div>
+                <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
+                  Application of the National Building Regulations: Fire
+                  Protection. Structural design, passive compartmentalization,
+                  travel distances, and life-safety egress verification.
+                </div>
+                <div class="md:col-span-3 flex md:justify-end">
+                  <span
+                    class="font-label-technical text-xs px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold"
+                    >MANDATORY STATUTORY</span
+                  >
+                </div>
+              </div>
+              <!-- Row 2: SANS 14520 -->
+              <div
+                class="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center hover:bg-surface-container-low transition-colors"
+              >
+                <div class="md:col-span-3">
+                  <span
+                    class="font-headline-sm text-base sm:text-lg font-bold text-primary block"
+                    >SANS 14520</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase"
+                    >Clean Agent Extinguishing</span
+                  >
+                </div>
+                <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
+                  Gaseous fire-extinguishing systems: Physical properties and
+                  system design for total flooding (Inergen, FM-200, FK-5-1-12 /
+                  Novec 1230) in server rooms and electrical substations.
+                </div>
+                <div class="md:col-span-3 flex md:justify-end">
+                  <span
+                    class="font-label-technical text-xs px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold"
+                    >HIGH VOLTAGE COMPLIANT</span
+                  >
+                </div>
+              </div>
+              <!-- Row 3: SANS 10139 -->
+              <div
+                class="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center hover:bg-surface-container-low transition-colors"
+              >
+                <div class="md:col-span-3">
+                  <span
+                    class="font-headline-sm text-base sm:text-lg font-bold text-primary block"
+                    >SANS 10139</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase"
+                    >Detection &amp; Alarm Systems</span
+                  >
+                </div>
+                <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
+                  Fire detection and alarm systems for buildings: System design,
+                  installation, commissioning, sounder decibel audits, and
+                  quarterly maintenance logbook sign-off.
+                </div>
+                <div class="md:col-span-3 flex md:justify-end">
+                  <span
+                    class="font-label-technical text-xs px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold"
+                    >SAQCC VERIFIED</span
+                  >
+                </div>
+              </div>
+              <!-- Row 4: SANS 369 -->
+              <div
+                class="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center hover:bg-surface-container-low transition-colors"
+              >
+                <div class="md:col-span-3">
+                  <span
+                    class="font-headline-sm text-base sm:text-lg font-bold text-primary block"
+                    >SANS 369</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase"
+                    >Actuation Mechanisms</span
+                  >
+                </div>
+                <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
+                  Operation of electrical actuating mechanisms and gaseous
+                  system release relays to ensure fail-safe suppression without
+                  unintentional triggering.
+                </div>
+                <div class="md:col-span-3 flex md:justify-end">
+                  <span
+                    class="font-label-technical text-xs px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold"
+                    >ZERO-FAILURE TOLERANCE</span
+                  >
+                </div>
+              </div>
+              <!-- Row 5: ASIB 11th Edition -->
+              <div
+                class="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-center hover:bg-surface-container-low transition-colors"
+              >
+                <div class="md:col-span-3">
+                  <span
+                    class="font-headline-sm text-base sm:text-lg font-bold text-primary block"
+                    >ASIB 11th Edition</span
+                  >
+                  <span
+                    class="font-label-technical text-[10px] text-outline uppercase"
+                    >Sprinkler Installations</span
+                  >
+                </div>
+                <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
+                  Automatic Sprinkler Inspection Bureau standards: High-hazard
+                  warehousing, in-rack sprinkler hydraulic calculations, pump
+                  house tests, and backflow preventer annual sign-offs.
+                </div>
+                <div class="md:col-span-3 flex md:justify-end">
+                  <span
+                    class="font-label-technical text-xs px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-bold"
+                    >UNDERWRITER ENDORSED</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Consultation CTA -->
+      <section class="max-w-7xl mx-auto px-4 md:px-gutter py-16 w-full">
+        <div
+          class="bg-primary text-on-primary rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden shadow-xl"
+        >
+          <div
+            class="absolute -right-8 -bottom-8 opacity-10 text-on-primary select-none pointer-events-none"
+          >
+            <span class="material-symbols-outlined text-[200px] sm:text-[260px]"
+              >shield</span
+            >
+          </div>
+          <div class="space-y-3 max-w-2xl relative z-10">
+            <span
+              class="font-label-technical text-xs bg-primary-container px-3 py-1 rounded text-on-primary uppercase font-bold tracking-wider border border-white/10"
+            >
+              FACILITY COMPLIANCE AUDITS
+            </span>
+            <h2
+              class="font-headline-lg text-2xl sm:text-headline-lg text-on-primary tracking-tight font-extrabold"
+            >
+              Ensure Your Infrastructure is 100% Audit-Ready Today
+            </h2>
+            <p
+              class="font-body-md text-sm sm:text-body-md text-on-primary-container"
+            >
+              Whether you require a retrospective risk gap assessment, gaseous
+              extinguishing retrofits, or a full turnkey installation, our
+              engineering directors are ready to consult.
+            </p>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full sm:w-auto relative z-10"
+          >
+            <button
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-surface text-primary font-label-lg font-bold hover:bg-surface-container-low transition-colors cursor-pointer"
+              onclick="handlePhoneClick(this)"
+              title="Copy phone number"
+            >
+              <span class="material-symbols-outlined text-lg">call</span>
+              <span>+27 (0)11 873-7593</span>
+            </button>
+            <button
+              class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-secondary text-on-secondary font-label-lg font-bold hover:bg-secondary-container transition-colors shadow-sm cursor-pointer"
+              onclick="copyDraftEmail(this)"
+            >
+              <span class="material-symbols-outlined text-lg"
+                >content_copy</span
+              >
+              <span>Copy Draft Email</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Global Footer -->
+    <footer
+      class="w-full bg-surface-container-low text-on-surface border-t border-surface-container"
+    >
+      <div class="bg-surface-container py-3">
+        <div
+          class="max-w-7xl mx-auto px-4 md:px-gutter flex flex-wrap items-center justify-between gap-3 text-xs"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="font-label-technical text-on-surface-variant uppercase font-semibold"
+              >Regulatory Accreditations:</span
+            >
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span
+              class="font-label-technical px-2.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold"
+              >FPASA REGISTERED MEMBER</span
+            >
+            <span
+              class="font-label-technical px-2.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold"
+              >ASIB CERTIFIED</span
+            >
+            <span
+              class="font-label-technical px-2.5 py-0.5 rounded bg-surface-container-highest text-primary font-bold"
+              >SAQCC-FIRE ACCREDITED</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-gutter py-12 grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <span
+              class="font-headline-sm text-lg text-primary font-extrabold tracking-tight"
+              >ALPHA PYROSEC</span
+            >
+            <span
+              class="font-label-technical text-[10px] text-tertiary-container bg-tertiary-fixed px-1.5 py-0.5 rounded font-bold"
+              >EST. 1993</span
+            >
+          </div>
+          <p
+            class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
+          >
+            Engineered life safety and industrial fire suppression across
+            sub-Saharan Africa. Certified turnkey design, supply, installation,
+            and statutory maintenance.
+          </p>
+        </div>
+        <div class="space-y-2">
+          <div
+            class="font-label-technical text-xs font-bold text-on-surface-variant uppercase tracking-wider"
+          >
+            DIRECT CONTACT CHANNELS
+          </div>
+          <div class="space-y-2 text-sm text-on-surface">
+            <div>
+              <div class="font-semibold text-primary">
+                Belinda Dos Santos (CEO)
+              </div>
+              <a
+                class="text-on-surface-variant hover:text-primary transition-colors text-xs font-label-technical"
+                href="mailto:belinda@alphapyro.co.za"
+                >belinda@alphapyro.co.za</a
+              >
+            </div>
+            <div>
+              <div class="font-semibold text-primary">
+                Rudie Kruger (Director)
+              </div>
+              <a
+                class="text-on-surface-variant hover:text-primary transition-colors text-xs font-label-technical"
+                href="mailto:rudie@alphapyro.co.za"
+                >rudie@alphapyro.co.za</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div
+            class="font-label-technical text-xs font-bold text-on-surface-variant uppercase tracking-wider"
+          >
+            OFFICE &amp; DISPATCH
+          </div>
+          <div class="text-sm text-on-surface-variant space-y-1">
+            <p>Germiston Industrial Basin / Nationwide Deployment</p>
+            <button
+              class="font-semibold text-primary hover:underline inline-flex items-center gap-1.5 cursor-pointer text-left py-0.5"
+              onclick="handlePhoneClick(this)"
+              title="Copy phone number"
+            >
+              <span class="material-symbols-outlined text-sm text-secondary"
+                >call</span
+              >
+              <span>Tel: +27 (0)11 873-7593</span>
+            </button>
+            <p class="text-xs font-label-technical text-outline">
+              CK93/022745/23 // OHS 16(2) Compliance Officer Appointed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container-high py-4">
+        <div
+          class="max-w-7xl mx-auto px-4 md:px-gutter flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant font-body-sm"
+        >
+          <div>© 2026 Alpha Pyrosec cc. All Rights Reserved.</div>
+          <div>Turnkey Fire Protection Solutions Since 1993.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fixed Mobile Bottom Navigation Bar (md:hidden) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-t border-slate-200 px-2 py-1 shadow-lg flex items-center justify-around"
+    >
+      <a
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors"
+        href="index.html"
+      >
+        <span class="material-symbols-outlined text-xl">home</span>
+        <span class="font-label-technical text-[10px] mt-0.5">Home</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors"
+        href="services.html"
+      >
+        <span class="material-symbols-outlined text-xl">build_circle</span>
+        <span class="font-label-technical text-[10px] mt-0.5">Services</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
+        href="about.html"
+      >
+        <span class="material-symbols-outlined text-xl text-primary">info</span>
+        <span
+          class="font-label-technical text-[10px] mt-0.5 text-primary font-bold"
+          >About Us</span
+        >
+      </a>
+      <button
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+        onclick="copyDraftEmail(this)"
+      >
+        <span class="material-symbols-outlined text-xl text-secondary"
+          >content_copy</span
+        >
+        <span class="font-label-technical text-[10px] mt-0.5">Copy Draft</span>
+      </button>
+    </nav>
+    <!-- Interactive Scripts for Clipboard Actions & Toast Feedback -->
+    <script>
+      const DRAFT_EMAIL_TEXT = `To: rudie.alphapyrosec@gmail.com
+Subject: Inquiry: Fire Protection & Engineering Consultation - [Your Company Name]
+
+Dear Alpha Pyrosec Engineering Team,
+
+I visited your website and would like to enquire about your turnkey fire protection and engineering solutions.
+
+Company / Organization: [Insert Company Name]
+Facility Location: [City / Province]
+Inquiry Scope: [e.g. Critical Asset Gas Suppression / SANS Compliance Audit / Water Deluge & Foam / Substation Protection / System Maintenance]
+Project Timeline / Urgency: [e.g. Immediate / Planned Shutdown / Tender Review]
+
+Please contact me to discuss technical specifications and arrange a consultation.
+
+Kind regards,
+[Your Name]
+[Your Phone Number]`;
+
+      const PHONE_NUMBER = "+27 11 873 7593";
+
+      let toastTimeout;
+
+      function showToast(title, desc, icon = "check_circle") {
+        const toast = document.getElementById("toast");
+        const toastTitle = document.getElementById("toast-title");
+        const toastDesc = document.getElementById("toast-desc");
+        const toastIcon = document.getElementById("toast-icon");
+
+        if (!toast) return;
+
+        toastTitle.textContent = title;
+        toastDesc.textContent = desc;
+        toastIcon.textContent = icon;
+
+        toast.classList.remove(
+          "opacity-0",
+          "translate-y-[-20px]",
+          "pointer-events-none",
+        );
+        toast.classList.add("opacity-100", "translate-y-0");
+
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.remove("opacity-100", "translate-y-0");
+          toast.classList.add(
+            "opacity-0",
+            "translate-y-[-20px]",
+            "pointer-events-none",
+          );
+        }, 3800);
+      }
+
+      function copyTextToClipboard(text, onSuccess) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard
+            .writeText(text)
+            .then(onSuccess)
+            .catch(() => {
+              fallbackCopyText(text, onSuccess);
+            });
+        } else {
+          fallbackCopyText(text, onSuccess);
+        }
+      }
+
+      function fallbackCopyText(text, onSuccess) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          document.execCommand("copy");
+          if (onSuccess) onSuccess();
+        } catch (err) {
+          console.error("Fallback copy error", err);
+        }
+        document.body.removeChild(textArea);
+      }
+
+      function copyDraftEmail(btn) {
+        copyTextToClipboard(DRAFT_EMAIL_TEXT, () => {
+          showToast(
+            "Draft Copied to Clipboard!",
+            "Ready to paste into your email client addressed to Rudie Kruger.",
+          );
+          if (btn) {
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = `<span class="material-symbols-outlined text-sm">check</span><span>Draft Copied!</span>`;
+            btn.classList.add("ring-2", "ring-emerald-400");
+            setTimeout(() => {
+              btn.innerHTML = originalHtml;
+              btn.classList.remove("ring-2", "ring-emerald-400");
+            }, 2500);
+          }
+        });
+      }
+
+      function handlePhoneClick(btn) {
+        copyTextToClipboard(PHONE_NUMBER, () => {
+          showToast(
+            "Phone Number Copied!",
+            `${PHONE_NUMBER} is ready to paste or dial.`,
+            "call",
+          );
+          if (btn) {
+            const originalHtml = btn.innerHTML;
+            const isCompact =
+              btn.querySelector(".text-lg") &&
+              !btn.querySelector("span:not(.material-symbols-outlined)");
+            if (isCompact) {
+              btn.innerHTML = `<span class="material-symbols-outlined text-lg text-emerald-600">check</span>`;
+            } else {
+              btn.innerHTML = `<span class="material-symbols-outlined text-sm text-emerald-600">check</span><span class="font-label-technical font-bold text-emerald-700">Copied +27 11 873 7593</span>`;
+            }
+            setTimeout(() => {
+              btn.innerHTML = originalHtml;
+            }, 2200);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
