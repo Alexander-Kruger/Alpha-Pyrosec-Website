@@ -1,6 +1,5 @@
 <!doctype html>
-
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth" lang="en" style="">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -171,23 +170,20 @@
         class="h-20 max-w-7xl mx-auto px-4 md:px-gutter flex items-center justify-between gap-space-md"
       >
         <div class="flex items-center gap-space-md shrink-0">
-          <a
-            class="flex flex-col hover:opacity-90 transition-opacity"
-            href="index.html"
-          >
-            <div class="flex items-center gap-space-sm">
+          <a href="index.html" class="flex flex-col text-decoration-none group">
+            <div class="flex items-center gap-2">
               <span
-                class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold"
+                class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
                 >ALPHA PYROSEC</span
               >
               <span
-                class="font-label-technical text-label-technical text-tertiary-container bg-tertiary-fixed px-space-xs py-0.5 rounded font-bold"
+                class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
                 >EST. 1993</span
               >
             </div>
             <span
-              class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-wider text-[11px]"
-              >Fire Protection Specialists cc</span
+              class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+              >FIRE PROTECTION SPECIALISTS CC</span
             >
           </a>
         </div>
@@ -223,15 +219,13 @@
             title="Click to copy phone number (+27 11 873 7593)"
           >
             <span class="material-symbols-outlined text-sm text-secondary"
-              >call</span
-            >
-            <span
+              >content_copy</span
+            ><span
               class="font-label-technical text-label-technical text-on-surface-variant"
               >TEL:</span
-            >
-            <span
+            ><span
               class="font-label-lg text-label-lg text-primary tracking-tight font-semibold"
-              >+27 (0)11 873-7593</span
+              >Copy: +27 (0)11 873-7593</span
             >
           </button>
           <button
@@ -239,25 +233,29 @@
             onclick="copyDraftEmail(this)"
           >
             <span class="material-symbols-outlined text-sm">content_copy</span>
-            <span>Copy Draft Email</span>
+            <span class="">Copy Draft Email</span>
           </button>
         </div>
         <!-- Mobile Top Actions -->
         <div class="flex md:hidden items-center gap-2">
           <button
-            aria-label="Call Alpha Pyrosec"
-            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary cursor-pointer"
+            aria-label="Copy Phone Number"
+            class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-full bg-surface-container-low text-primary font-label-technical text-xs font-semibold cursor-pointer border border-surface-container hover:bg-surface-container transition-colors shadow-sm"
             onclick="handlePhoneClick(this)"
-            title="Copy phone number"
+            title="Copy Phone Number (+27 11 873 7593)"
           >
-            <span class="material-symbols-outlined text-lg">call</span>
-          </button>
-          <button
-            class="px-3 py-1.5 rounded bg-secondary text-on-secondary font-label-technical text-xs font-semibold cursor-pointer inline-flex items-center gap-1"
+            <span class="material-symbols-outlined text-sm text-secondary"
+              >call</span
+            ><span class="">Copy Tel</span></button
+          ><button
+            aria-label="Copy Draft Email"
+            class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-full bg-secondary text-on-secondary font-label-technical text-xs font-semibold cursor-pointer hover:bg-secondary-container transition-colors shadow-sm"
             onclick="copyDraftEmail(this)"
+            title="Copy Draft Email"
           >
-            <span class="material-symbols-outlined text-xs">content_copy</span>
-            <span>Copy Draft</span>
+            <span class="material-symbols-outlined text-sm text-white"
+              >mail</span
+            ><span class="">Draft Email</span>
           </button>
         </div>
       </div>
@@ -266,7 +264,7 @@
     <main class="w-full pt-20 bg-surface">
       <!-- 1. Hero Section: Split-Screen High-Impact Design -->
       <section
-        class="relative bg-gradient-to-b from-surface-container-low via-surface to-surface px-4 md:px-gutter py-12 md:py- space-2xl overflow-hidden border-b border-surface-container"
+        class="relative bg-gradient-to-b from-surface-container-low via-surface to-surface px-4 md:px-gutter py-12 md:py-space-2xl overflow-hidden border-b border-surface-container"
       >
         <div
           class="absolute inset-0 opacity-30 pointer-events-none bg-[radial-gradient(#90a8ff_1px,transparent_1px)] [background-size:24px_24px]"
@@ -309,9 +307,11 @@
                 >
                   We have spearheaded the paradigm shift from obsolete
                   transactional box-checking to proactive, audit-proof turnkey
-                  safety. By housing 100% of our design, installation, and
-                  compliance certification in-house, we eliminate contractor
-                  liability gaps and ensure permanent asset defensibility.
+                  safety. Our certified technicians execute full site
+                  installations and hydraulic hazard calculations in-house.
+                  Where systems utilize client-supplied MCP cylinders, we
+                  coordinate seamless hydrostatic testing and recertification
+                  through Brigit, eliminating contractor liability gaps.
                 </p>
               </div>
               <!-- Prominent Stat Blocks -->
@@ -374,17 +374,15 @@
                   <span class="material-symbols-outlined text-sm"
                     >content_copy</span
                   >
-                  <span>Copy Draft Email</span>
+                  <span class="">Copy Draft Email</span>
                 </button>
                 <a
                   class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-surface-container text-primary font-label-lg font-bold hover:bg-surface-container-high transition-colors"
                   href="services.html"
-                >
-                  <span class="material-symbols-outlined text-base"
+                  ><span class="material-symbols-outlined text-base"
                     >dashboard_customize</span
-                  >
-                  <span>View Engineering Scope</span>
-                </a>
+                  ><span class="">View Technical Scope</span></a
+                >
               </div>
             </div>
             <!-- Right Column: Hero Showcase Image Card -->
@@ -398,7 +396,7 @@
                   <img
                     alt="Alpha Pyrosec Engineering Field Team in Front of 525V Switchgear Enclosure"
                     class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbxPL0evRU3ges-s6tg4FwdoKeGGZyFUzAXSH4D2F8SKL9yseOomBdnk81mFULls7i87M_HDfNj_fVlEO3u8jjo9vPcYqol8jVFzsRyHlSksG6YHuhPKX6mGUeOgf_zGeE0057h8JYMyAlBoV77tg9SBStgfD4amsLs3Ml9_4AGRopJlQEf3nC6rjvs4N1RYva9gSESvSAFbWXyrPyeSiEOvKjrv5I8kFc3RXcJmUhAsGPWHXh9NyvSa2X1iGPFeE"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuRNdF5_61HJLXBS8YRLHAF8ksgWEncJWJgyhtQJJcWczePbdAkS3AWKwdkiIyJk1PpCs35C12HeUt_Rvl67S5Rv-7ck9tsoSTzC-RHul9d3M0VxU7QsOZ95XHMF27o6tw6enTJ4WMYDVdOWyokLL_dQvNcs9Zu-IpJukEwIXMgWW9CtH6_bZESk1bQdAB5Lq28riVqTTBmdVedVRnIdvIuXUs1jodfvhRGJQXxIBBbaaRe4nRZCBcpHUNjoqj5s1e"
                   />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-transparent"
@@ -437,14 +435,15 @@
                     <h3
                       class="text-xl font-headline-sm font-bold text-white tracking-tight"
                     >
-                      On-Site Engineering Execution Team
+                      On-Site Technical Execution Team
                     </h3>
                     <p
                       class="text-xs text-surface-container-low/90 leading-relaxed font-body-sm"
                     >
                       Directly appointed field technicians command turnkey
-                      switchgear protection, clean agent commissioning, and
-                      heavy-hazard industrial sign-offs nationwide.
+                      switchgear protection, verified hydraulic hazard
+                      calculations, and gaseous agent commissioning nationwide
+                      (client-supplied MCP cylinders processed via Brigit).
                     </p>
                     <div
                       class="pt-2 flex flex-wrap gap-2 text-[11px] font-label-technical"
@@ -515,9 +514,9 @@
             >
               <div class="relative h-64 overflow-hidden bg-surface-container">
                 <img
-                  alt="Alpha Pyrosec Lead Technicians On-Site"
-                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbxPL0evRU3ges-s6tg4FwdoKeGGZyFUzAXSH4D2F8SKL9yseOomBdnk81mFULls7i87M_HDfNj_fVlEO3u8jjo9vPcYqol8jVFzsRyHlSksG6YHuhPKX6mGUeOgf_zGeE0057h8JYMyAlBoV77tg9SBStgfD4amsLs3Ml9_4AGRopJlQEf3nC6rjvs4N1RYva9gSESvSAFbWXyrPyeSiEOvKjrv5I8kFc3RXcJmUhAsGPWHXh9NyvSa2X1iGPFeE"
+                  alt="Alpha Pyrosec Lead Technicians Handshake and Internal Lineage"
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFE6YqAaUrP-_CJw5vZwPXRHw0IoO5PA_0cfZvmyvNUlvemMvVpESLmSIySofSOq68aeK7jsFY-_qD5JNIpGUZlVaWy9eLHfkVvNKfir7VJi42ppZrIQYdY4cwgp8PkOoohysqUIyM3684SghyD3R6FbZQmoadWQJoP0sgz-P5ehOvnYCEokU6O44C6CZpS2wfpq8EUDqDIdzRnePvTBW1-y-kVu_KgQc1yFA1WgueIxpk-cosijosOrvMcRokd4xS"
                 />
                 <div
                   class="absolute top-3 left-3 bg-primary/90 text-on-primary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
@@ -559,9 +558,9 @@
             >
               <div class="relative h-64 overflow-hidden bg-surface-container">
                 <img
-                  alt="Gantry &amp; 525V Flux Handling MCC Substation Deployment"
+                  alt="525V Switchgear Deployment and Electrical Control Panel Calibration"
                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj-GDHx0Dr3B49xvrHhFC4F505VU-nFCj5-3Wg63Sjm_jnUdlmGTwb9s7ZlTm5nJnYdMK8H_XPsT77xZNr8oVdq0aW-pRrrSEEsEQpUA1jZb2jd6tbR792HOoiA_rKgqcDY6kWCl-ujmWcikPNoUEfY36XuTFTHcyBWG9A8OQ8rEu_mgRTY8Xh9tmw9n9wFKbzvlpK82vZa9aWod6_E6Ro8EYFxxtfHWHAN2D9Si_CcZmW3R2UznP7i6IJL7C6vgep"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLKyuCvqQSeLGya66AFNh_Ba2KMM-ICVP2xVNbQls5FyLWBstOkoUQ1F_ZyfG_NX3S0je2_kqTbm1R0RDrwW8Dbr8BCrc1wTL1V8OOV2hqhlIZwOt7Tp6oFVRB0LyqOCbW1xEWtchJOI-nXMER5tnNLVqAr1QWDZNIzEtdYYUtiRhMNQjOT1OGTvT3UbCkCNr4LDWaFPY_fzQ17TPdp0ilhWXvzj-1-GdSN5hQIusG6ExMOL1kKwzxLZ_TMefIZyzY"
                 />
                 <div
                   class="absolute top-3 left-3 bg-secondary/90 text-on-secondary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
@@ -603,9 +602,9 @@
             >
               <div class="relative h-64 overflow-hidden bg-surface-container">
                 <img
-                  alt="Precision Addressable Fire Alarm Diagnostic and Multi-Loop Interface"
+                  alt="Technician Validating and Operating Addressable Fire Alarm Control Interface Panel"
                   class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMtCW3wusx8k7Y-H7kDTOFzYYH21rf-dxbt1nl5HDs5fhg_uvqPR2BLuNlus4Xq00LSg5B_-oYW6EFDwdiJYaNBVnIPTYcOUWd90NRvWVamdjYMAZRGr3Cn4gEzbSPP3mW2SbBT_dz96G5x4VWfaiwnj_ng0q0raWwxYjNh2ZUU-E0efWzfIlOU8cqMPn0485IQplQtJ9NId2pGB1Jw5yqmKj-Ycw36bRvtezUAWFhahhLcHltGn5TwECsibESHe4"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwd5ax3SC9vREvFYEGZ_gec-62ElLgOwpH7hVqvp73Jt7t-U0-6Yyr2h-lCQ4ALNfQUXeEuNyjh6eq5qR-yrU7gIu7gEg0IXmmAUriz-QiNO-UB4Q3LMBOoBkYpGkrroDvodOVckYG94GkTfVfunB222iw3O_vh5rgqMt1BlsZaKs7b1SFO8JOqucVMtww-dmZ4ySCSj4fuvpf7KvDlrLYEzYzGyn9HqcXGZp3e1ryVd_YzMi2DWKfHPYuS01yN5hz"
                 />
                 <div
                   class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-technical text-xs px-2.5 py-1 rounded backdrop-blur-sm font-semibold"
@@ -701,11 +700,11 @@
                 <p
                   class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
                 >
-                  Zero compliance ambiguity. Every system designed, serviced, or
-                  retrofitted conforms strictly to SANS 10400-T, SANS 14520, and
-                  ASIB 11th Edition standards. We issue formal Certificates of
-                  Compliance (CoC) that stand up under rigorous insurance
-                  underwriter audits.
+                  Steering strategic executive leadership, corporate governance,
+                  and nationwide turnkey expansion. Belinda drives long-term
+                  commercial sustainability, certified vendor compliance, and
+                  transparent financial stewardship across all technical and
+                  field operations.
                 </p>
               </div>
               <div
@@ -817,7 +816,7 @@
           </div>
         </div>
       </section>
-      <!-- 3. Executive & Technical Leadership Grid (3 Profiles Only) -->
+      <!-- 3. Executive & Technical Leadership Grid (3 Profiles) -->
       <section class="max-w-7xl mx-auto px-4 md:px-gutter py-16 w-full">
         <div class="space-y-10">
           <div
@@ -844,7 +843,7 @@
               authority under the South African OHS Act.
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div class="grid grid-cols-1 gap-6 lg:gap-8 md:grid-cols-2 w-full">
             <!-- Leader 1: Belinda Dos Santos -->
             <div
               class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-surface-container shadow-sm flex flex-col justify-between gap-6 hover:shadow-md transition-shadow"
@@ -945,53 +944,6 @@
               </div>
             </div>
             <!-- Leader 3: Thamanyane Ezekia Mokati -->
-            <div
-              class="bg-surface-container-lowest rounded-xl p-6 sm:p-8 border border-surface-container shadow-sm flex flex-col justify-between gap-6 hover:shadow-md transition-shadow"
-            >
-              <div class="space-y-4">
-                <div class="flex items-center gap-4">
-                  <div
-                    class="w-16 h-16 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm text-xl font-extrabold border border-secondary/10"
-                  >
-                    TM
-                  </div>
-                  <div>
-                    <h3 class="font-headline-sm text-xl font-bold text-primary">
-                      Thamanyane Ezekia Mokati
-                    </h3>
-                    <div
-                      class="font-label-technical text-xs text-secondary font-bold uppercase mt-0.5"
-                    >
-                      Section 16(2) Appointee &amp; Ops Lead
-                    </div>
-                  </div>
-                </div>
-                <p
-                  class="font-body-sm text-sm text-on-surface-variant leading-relaxed"
-                >
-                  Holding statutory legal appointments under South Africa's OHS
-                  Act 85 of 1993. Thamanyane commands on-site execution, crew
-                  safety protocols, and rigorous system field sign-offs with
-                  total operational authority.
-                </p>
-              </div>
-              <div
-                class="pt-3 border-t border-surface-container flex flex-col gap-2"
-              >
-                <span
-                  class="font-label-technical text-[11px] text-outline uppercase font-semibold"
-                  >STATUTORY FOCUS</span
-                >
-                <span
-                  class="font-label-technical text-xs text-on-surface-variant font-semibold flex items-center gap-1.5"
-                >
-                  <span class="material-symbols-outlined text-sm text-primary"
-                    >gavel</span
-                  >
-                  OHS Act 85 of 1993 // Field Assurance
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -1078,9 +1030,10 @@
                   >
                 </div>
                 <div class="md:col-span-6 font-body-sm text-sm text-on-surface">
-                  Gaseous fire-extinguishing systems: Physical properties and
-                  system design for total flooding (Inergen, FM-200, FK-5-1-12 /
-                  Novec 1230) in server rooms and electrical substations.
+                  Gaseous fire-extinguishing systems: Certified hydraulic hazard
+                  calculations, room integrity testing, and clean agent total
+                  flooding. Client-provided MCP cylinders are routed through
+                  Brigit for testing, filling, and certified processing.
                 </div>
                 <div class="md:col-span-3 flex md:justify-end">
                   <span
@@ -1210,17 +1163,17 @@
               onclick="handlePhoneClick(this)"
               title="Copy phone number"
             >
-              <span class="material-symbols-outlined text-lg">call</span>
-              <span>+27 (0)11 873-7593</span>
+              <span class="material-symbols-outlined text-lg text-secondary"
+                >call</span
+              ><span class="">Copy Phone Number (+27 11 873-7593)</span>
             </button>
             <button
               class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-secondary text-on-secondary font-label-lg font-bold hover:bg-secondary-container transition-colors shadow-sm cursor-pointer"
               onclick="copyDraftEmail(this)"
             >
-              <span class="material-symbols-outlined text-lg"
-                >content_copy</span
-              >
-              <span>Copy Draft Email</span>
+              <span class="material-symbols-outlined text-lg text-white"
+                >mail</span
+              ><span class="">Copy Draft Email</span>
             </button>
           </div>
         </div>
@@ -1314,16 +1267,15 @@
             OFFICE &amp; DISPATCH
           </div>
           <div class="text-sm text-on-surface-variant space-y-1">
-            <p>Germiston Industrial Basin / Nationwide Deployment</p>
+            <p class="">Germiston Industrial Basin / Nationwide Deployment</p>
             <button
               class="font-semibold text-primary hover:underline inline-flex items-center gap-1.5 cursor-pointer text-left py-0.5"
               onclick="handlePhoneClick(this)"
               title="Copy phone number"
             >
               <span class="material-symbols-outlined text-sm text-secondary"
-                >call</span
-              >
-              <span>Tel: +27 (0)11 873-7593</span>
+                >content_copy</span
+              ><span class="">Copy Tel: +27 (0)11 873-7593</span>
             </button>
             <p class="text-xs font-label-technical text-outline">
               CK93/022745/23 // OHS 16(2) Compliance Officer Appointed
@@ -1335,8 +1287,8 @@
         <div
           class="max-w-7xl mx-auto px-4 md:px-gutter flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant font-body-sm"
         >
-          <div>© 2026 Alpha Pyrosec cc. All Rights Reserved.</div>
-          <div>Turnkey Fire Protection Solutions Since 1993.</div>
+          <div class="">© 2026 Alpha Pyrosec cc. All Rights Reserved.</div>
+          <div class="">Turnkey Fire Protection Solutions Since 1993.</div>
         </div>
       </div>
     </footer>
@@ -1345,38 +1297,74 @@
       class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-t border-slate-200 px-2 py-1 shadow-lg flex items-center justify-around"
     >
       <a
-        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors"
         href="index.html"
-      >
-        <span class="material-symbols-outlined text-xl">home</span>
-        <span class="font-label-technical text-[10px] mt-0.5">Home</span>
-      </a>
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Home</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
       <a
-        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors"
         href="services.html"
-      >
-        <span class="material-symbols-outlined text-xl">build_circle</span>
-        <span class="font-label-technical text-[10px] mt-0.5">Services</span>
-      </a>
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Services</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
       <a
-        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
         href="about.html"
-      >
-        <span class="material-symbols-outlined text-xl text-primary">info</span>
-        <span
-          class="font-label-technical text-[10px] mt-0.5 text-primary font-bold"
-          >About Us</span
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
+        ><svg
+          class="w-5 h-5 text-primary"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
         >
-      </a>
-      <button
-        class="flex flex-col items-center justify-center py-1.5 px-3 text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
-        onclick="copyDraftEmail(this)"
-      >
-        <span class="material-symbols-outlined text-xl text-secondary"
-          >content_copy</span
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5 font-bold">About Us</span
+        ><span class="w-1 h-1 rounded-full bg-primary mt-0.5"></span
+      ></a>
+      <a
+        href="contact.html"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
         >
-        <span class="font-label-technical text-[10px] mt-0.5">Copy Draft</span>
-      </button>
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Contact</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
     </nav>
     <!-- Interactive Scripts for Clipboard Actions & Toast Feedback -->
     <script>

@@ -1,6 +1,5 @@
 <!doctype html>
-
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth" lang="en" style="">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -215,32 +214,39 @@
     <header
       class="flex md:hidden sticky top-0 z-40 w-full bg-surface/95 backdrop-blur-md border-b border-surface-container px-4 py-3 items-center justify-between shadow-sm"
     >
-      <div class="flex items-center gap-2">
-        <div class="flex flex-col">
-          <div class="flex items-center gap-1.5">
-            <span
-              class="font-headline-sm text-base text-primary font-bold tracking-tight"
-              >ALPHA PYROSEC</span
-            >
-            <span
-              class="text-[10px] font-bold text-tertiary-container bg-tertiary-fixed px-1 py-0.5 rounded"
-              >EST. 1993</span
-            >
-          </div>
+      <a href="index.html" class="flex flex-col text-decoration-none group"
+        ><div class="flex items-center gap-2">
           <span
-            class="text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold"
-            >Fire Protection Specialists</span
+            class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
+            >ALPHA PYROSEC</span
+          ><span
+            class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
+            >EST. 1993</span
           >
         </div>
-      </div>
-      <button
-        class="inline-flex items-center gap-1 px-3 py-1.5 rounded bg-secondary text-on-secondary text-xs font-semibold shadow-sm active:scale-95 transition"
-        onclick="copyPhoneNumber(this)"
-        type="button"
+        <span
+          class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+          >FIRE PROTECTION SPECIALISTS CC</span
+        ></a
       >
-        <span class="material-symbols-outlined text-sm">phone_in_talk</span>
-        <span class="btn-text">Call Emergency</span>
-      </button>
+      <div class="flex items-center gap-1.5 shrink-0">
+        <button
+          class="inline-flex items-center justify-center h-8 px-3 rounded-full bg-surface-container-low text-primary text-xs font-semibold shadow-sm active:scale-95 transition cursor-pointer border border-surface-container-high hover:bg-surface-container gap-1"
+          onclick="copyPhoneNumber(this)"
+          type="button"
+        >
+          <span class="material-symbols-outlined text-sm text-secondary"
+            >call</span
+          ><span class="btn-text">Copy Tel</span></button
+        ><button
+          class="inline-flex items-center justify-center h-8 px-3 rounded-full bg-secondary text-on-secondary text-xs font-semibold shadow-sm active:scale-95 transition cursor-pointer hover:bg-secondary-container gap-1"
+          onclick="copyDraftEmail(this)"
+          type="button"
+        >
+          <span class="material-symbols-outlined text-sm">mail</span
+          ><span class="btn-text">Draft Email</span>
+        </button>
+      </div>
     </header>
     <!-- Desktop Top Header -->
     <header
@@ -249,23 +255,23 @@
       <div
         class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md w-full"
       >
-        <div class="flex items-center gap-space-md shrink-0">
-          <div class="flex flex-col">
-            <div class="flex items-center gap-space-sm">
-              <span
-                class="font-headline-sm text-headline-sm text-primary tracking-tight"
-                >ALPHA PYROSEC</span
-              ><span
-                class="font-label-technical text-label-technical text-tertiary-container bg-tertiary-fixed px-space-xs py-0.5 rounded"
-                >EST. 1993</span
-              >
-            </div>
+        <a
+          href="index.html"
+          class="flex flex-col text-decoration-none group shrink-0"
+          ><div class="flex items-center gap-2">
             <span
-              class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-wider"
-              >Fire Protection Specialists cc</span
+              class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
+              >ALPHA PYROSEC</span
+            ><span
+              class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
+              >EST. 1993</span
             >
           </div>
-        </div>
+          <span
+            class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+            >FIRE PROTECTION SPECIALISTS CC</span
+          ></a
+        >
         <nav
           class="hidden lg:flex items-center gap-space-lg"
           data-active-classes="text-primary font-bold"
@@ -299,12 +305,14 @@
             onclick="copyPhoneNumber(this)"
             type="button"
           >
-            <span
+            <span class="material-symbols-outlined text-sm text-secondary"
+              >content_copy</span
+            ><span
               class="font-label-technical text-label-technical text-on-surface-variant"
               >TEL:</span
             ><span
               class="font-label-lg text-label-lg text-primary tracking-tight btn-text"
-              >+27 (0)11 873-7593</span
+              >Copy: +27 (0)11 873-7593</span
             ></button
           ><button
             class="inline-flex items-center justify-center gap-1.5 px-space-lg py-space-sm rounded bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-[0_1px_3px_rgba(15,23,42,0.05)] cursor-pointer"
@@ -326,26 +334,11 @@
           <div
             class="max-w-7xl mx-auto px-4 md:px-gutter flex flex-wrap items-center justify-between gap-space-xs font-label-technical text-label-technical"
           >
-            <div
-              class="flex items-center gap-space-xs text-on-surface-variant text-xs md:text-label-technical"
+            <span class="material-symbols-outlined text-sm text-primary"
+              >folder_open</span
+            ><span class="text-on-surface font-semibold tracking-wide"
+              >ENGINEERING SERVICES &amp; PORTFOLIO</span
             >
-              <span class="text-primary font-bold">ALPHA PYROSEC</span>
-              <span class="">/</span>
-              <span class="text-on-surface font-medium"
-                >ENGINEERING SERVICES &amp; PORTFOLIO</span
-              >
-            </div>
-            <div
-              class="flex items-center gap-space-md text-on-surface-variant text-[11px] md:text-label-technical"
-            >
-              <span class="inline-flex items-center gap-1.5">
-                <span
-                  class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"
-                ></span>
-                ACTIVE STANDARDS: SANS 1475 | SANS 10139 | NFPA 2001 | ASIB 12TH
-                ED.
-              </span>
-            </div>
           </div>
         </section>
         <!-- Page Header & Contextual Metrics -->
@@ -468,8 +461,8 @@
                 >
                   <img
                     class="w-full h-full object-cover"
-                    data-alt="High-pressure black and yellow gas suppression cylinders arranged in an industrial outdoor manifold racking system on metal grating under a bright South African sky."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzqUMLdOaqZiOV6OYCkzDTUsDvJf56y4nfKAByUNuttAIz5Y3ylGxtc576RteslZwznNO4H2RK5LCKOOu_e48ViOHrTEzzo1spx9Z465iixx4fu0xjXuZc0SASB00YaG1PfgmV68u1WwcJjgsJ3b4cXp2aEvifg6daDso6rMTgW8ofiSfTkRVO-3vYgqflzNkEJYGX1BWCQFEo4-3fwHt81lmvw4TkE-i6wl4b6Bd8Kuo_QSg24Ra1_-T_rojkHdc"
+                    data-alt="High-pressure Pyroshield IG-55 manifold cylinders in black with yellow shoulders installed in outdoor racking."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9PTamPDDQXpq3XlnZCBbiSzuisYQpy5tGMOwmHwZlwnWeZTD-9bnhh1D7FZJg4Epya2R50oRP44cgbw51NM3A5sxOaQbNVFOskFfUvJFz6Kjaip86qTEOgnwTq9DKTYxy4gPy5DK1i6kgz3u4t1ftapBQaHGeqYZFSo2YI6dWP9Dnff07EUO8zlm3wYQmNP5feCnVFBninMtQFfYvb4VlFUulX4xudDAOIGm8l9MojffIjBIuVFkOj2QBSkMFcJyD"
                   />
                   <div
                     class="absolute bottom-2 left-2 bg-surface/90 px-space-xs py-0.5 rounded text-primary font-label-technical text-label-technical shadow-sm"
@@ -532,8 +525,8 @@
                 >
                   <img
                     class="w-full h-full object-cover"
-                    data-alt="External heavy industrial brick facility Thickener MCC 525V housing with high pressure red fire water pipes, emergency exit doors, and specialized deluge valving."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzqUMLdOaqZiOV6OYCkzDTUsDvJf56y4nfKAByUNuttAIz5Y3ylGxtc576RteslZwznNO4H2RK5LCKOOu_e48ViOHrTEzzo1spx9Z465iixx4fu0xjXuZc0SASB00YaG1PfgmV68u1WwcJjgsJ3b4cXp2aEvifg6daDso6rMTgW8ofiSfTkRVO-3vYgqflzNkEJYGX1BWCQFEo4-3fwHt81lmvw4TkE-i6wl4b6Bd8Kuo_QSg24Ra1_-T_rojkHdc"
+                    data-alt="External heavy industrial brick facility Thickener MCC 525V housing with high pressure red fire water pipes and specialized deluge valving."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz-79AdNcnkFMFZ-75SYhyECOsuZ12uHs9S2lhnueABoK4Rcip5hlzQp4XWeSU5_r1ngow9VzjNpQ-17I-jPXyHLyZfWnY0eWUURJFVNnur9rmmRy5MlLTuZoUqQ5ev3pFSlMta-eNA6ldWPcxK0_1xRd8Z03a_mzudRp6tLQN6pOR3eAKhXspaDPxlyLP5fI2d_eu7WNXbIzWd_LaTSUpcrqS9_funkoNDSX4-fQjVCiuZxswl09W73YfPuehv_6k"
                   />
                   <div
                     class="absolute bottom-2 left-2 bg-surface/90 px-space-xs py-0.5 rounded text-primary font-label-technical text-label-technical shadow-sm"
@@ -598,7 +591,7 @@
                   <img
                     class="w-full h-full object-cover"
                     data-alt="Technical array of VESDA VLF aspirating smoke detection units, C-Tec fire alarm release stations, industrial optical smoke sensors, green strobe beacons and sounders."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa-BsPvY_33jjtxUKVhcJXGn8nR05CPM9jXHJS_ymhzz7YzSWhL6zv4yNC6b8gCTWuK9A3xzYWnBosSw9zHrzrrWZsSV5b2Gg6RtanS_s1UVmWWXFiVfkuQyi1gQt0wCECuoeTuyxUPBTvpLw5gseOUy46nAHvpSJ_jm3I7tuzOz4V3EdlG1dhcq4A7Xv6GfoJVsbbM-KGjYC3s9qQDgDLwsLCSDEqpQOI7ZuG2kaGxXwuqPea2ACbzd4hm5vicy2E"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-ab1uAAGmXOKXSuaGkTeKaLFEbbq0-gb_YZxAdaFXfjFZq3X6Du2_4-kohxhaiHkZ3iJjotfR5LnaILQYuXhYo65DY7oWEC2iFnfBEQMde4DVzi_-K1GeBLVWUH52XUxj_ZcIphWOBgVlPVhgM3Ah1cgkbImfsLz3Tk76a0jAEZ_GoS-oG5Fu1r8F1OWe7dDClPlUraRlrwNG_d7w6K0XTBpSidQSLMSDoNjMnUgJMieJsRy12yWqaa2b0CTr7x1"
                   />
                   <div
                     class="absolute bottom-2 left-2 bg-surface/90 px-space-xs py-0.5 rounded text-primary font-label-technical text-label-technical shadow-sm"
@@ -662,9 +655,9 @@
                   class="relative h-48 w-full bg-surface-container-high overflow-hidden"
                 >
                   <img
-                    alt="Substation alarm cubicle FED TO 480-MCP-010 with red overhead pipework and safety isolation hardware."
-                    class="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfD1q8_9kip0J6JhY_4SwCzDMYFzozvw1ZBPbWHIExXAH4Ij-_qAELm63YHimBkuyOh9LTC3oSBs1eP1ldgnUogXAY-xQU3-Ybgs1UkPpqKYl3MEY3EQeKRlAt0sn2gkWDnlMAcVkj_SPLv63MIOahQRVMFdGw6waucYhRBhCIy8pliOxDw3a-KPV2dJIuwdpjGjACbn9LmHUVKM5D7ptyZzeYXpKg_ftEi9DRp7Pwkp6H76dY317gDyHJ4Tiq-N_-"
+                    alt="Certified Alpha Pyrosec technician inspecting mounted fire extinguisher equipment during an on-site audit."
+                    class="w-full h-full object-cover object-top"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzrGB8SrAxB4gXv6r8tOSpU01eKv3ALHboqxXdpzsJ0BkCMbP0NDjnf7z8QI69FiPKYxW5P_QIEHcQgfG9JoqikP6VAU4pOX5xCS-pjx48MT5A2PsjBobZLiY75ymhebtWhFJ9cgpoufJlrHHGGo8oYAkacm4JzfTJvwO27JwXKA_X3eXLnna-gLuh3DwZw1FLht4VGxuIiov3WboPKRwtMh-ucpXAmPew-8aFe3ZBNWQBY6kh7ym_2mGUj9rc37z"
                   />
                   <div
                     class="absolute bottom-2 left-2 bg-surface/90 px-space-xs py-0.5 rounded text-primary font-label-technical text-label-technical shadow-sm"
@@ -768,7 +761,7 @@
                   <p class="font-body-md text-body-md text-on-surface-variant">
                     Unlike transactional service providers who perform hurried
                     visual checks and depart with incomplete paperwork, Alpha
-                    Pyrosec permanently stations certified field engineers at
+                    Pyrosec permanently stations certified field technicians at
                     your facility for five continuous business days.
                   </p>
                   <div
@@ -817,12 +810,13 @@
                         interrogation.
                       </li>
                       <li class="">
-                        Ultrasonic gaseous cylinder liquid-level &amp; pressure
-                        verification.
+                        Client-supplied MCP cylinder logging &amp; dispatch to
+                        Brigit for accredited hydrostatic testing and
+                        recertification.
                       </li>
                       <li class="">
-                        Aspirating pipe network transit-time testing &amp;
-                        filter flow verification.
+                        Hydraulic hazard calculation reviews and aspirating pipe
+                        network transit-time testing.
                       </li>
                       <li class="">
                         Hydrostatic line pressure testing across wet sprinkler
@@ -857,16 +851,16 @@
                         batteries, and actuator pins.
                       </li>
                       <li class="">
-                        No secondary callout surcharges: technician tools and
-                        spares remain on-site.
+                        Integration of Brigit-certified client MCP cylinders
+                        with full manufacturer compliance certificates.
+                      </li>
+                      <li class="">
+                        No secondary callout surcharges: technician tools,
+                        rigging equipment, and spares remain on-site.
                       </li>
                       <li class="">
                         Issuance of updated SANS compliance certificates
                         immediately upon closure.
-                      </li>
-                      <li class="">
-                        Zero open audit findings when industrial safety
-                        inspectors review premises.
                       </li>
                     </ul>
                   </div>
@@ -932,7 +926,7 @@
                   <img
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     data-alt="High pressure Pyroshield IG55 clean agent manifold cylinders in black with bright yellow shoulders installed outside a heavy industrial processing substation."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzqUMLdOaqZiOV6OYCkzDTUsDvJf56y4nfKAByUNuttAIz5Y3ylGxtc576RteslZwznNO4H2RK5LCKOOu_e48ViOHrTEzzo1spx9Z465iixx4fu0xjXuZc0SASB00YaG1PfgmV68u1WwcJjgsJ3b4cXp2aEvifg6daDso6rMTgW8ofiSfTkRVO-3vYgqflzNkEJYGX1BWCQFEo4-3fwHt81lmvw4TkE-i6wl4b6Bd8Kuo_QSg24Ra1_-T_rojkHdc"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9PTamPDDQXpq3XlnZCBbiSzuisYQpy5tGMOwmHwZlwnWeZTD-9bnhh1D7FZJg4Epya2R50oRP44cgbw51NM3A5sxOaQbNVFOskFfUvJFz6Kjaip86qTEOgnwTq9DKTYxy4gPy5DK1i6kgz3u4t1ftapBQaHGeqYZFSo2YI6dWP9Dnff07EUO8zlm3wYQmNP5feCnVFBninMtQFfYvb4VlFUulX4xudDAOIGm8l9MojffIjBIuVFkOj2QBSkMFcJyD"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -978,7 +972,7 @@
                   <img
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     data-alt="Internal switchgear control room with rows of industrial green electrical panels, overhead red fire suppression pipes and yellow safety tags."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfD1q8_9kip0J6JhY_4SwCzDMYFzozvw1ZBPbWHIExXAH4Ij-_qAELm63YHimBkuyOh9LTC3oSBs1eP1ldgnUogXAY-xQU3-Ybgs1UkPpqKYl3MEY3EQeKRlAt0sn2gkWDnlMAcVkj_SPLv63MIOahQRVMFdGw6waucYhRBhCIy8pliOxDw3a-KPV2dJIuwdpjGjACbn9LmHUVKM5D7ptyZzeYXpKg_ftEi9DRp7Pwkp6H76dY317gDyHJ4Tiq-N_-"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRdEfw3owpStHQmd5L4WhW8TN_ljjiQrbmBuUtxUHyHtNUjGe9ySGwYBo7DRLPmhh2IHv6ta2je0Lis23vA_cX0B_eVmpl4bEgzRJb8Tv7xa29ReZbtk3d4chQ_W1E1Jx3uUodMNEcq280Dj0GnKf-AYKLDFp5jnfsobFJSWnYb2keT3UkfqTieR3LyCmVNU2E1DE-xvHlRF9AIeLrpHNQQwrEryOuj6-Buf-1gSjAgL5NkzuB61C5lJtueMbbPSEe"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -1024,7 +1018,7 @@
                   <img
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     data-alt="Top down flat-lay view of life safety electronics including VESDA VLF aspirating smoke detector unit, C-Tec Extinguisher Release Remote Status Unit, yellow call point and alarm bells."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa-BsPvY_33jjtxUKVhcJXGn8nR05CPM9jXHJS_ymhzz7YzSWhL6zv4yNC6b8gCTWuK9A3xzYWnBosSw9zHrzrrWZsSV5b2Gg6RtanS_s1UVmWWXFiVfkuQyi1gQt0wCECuoeTuyxUPBTvpLw5gseOUy46nAHvpSJ_jm3I7tuzOz4V3EdlG1dhcq4A7Xv6GfoJVsbbM-KGjYC3s9qQDgDLwsLCSDEqpQOI7ZuG2kaGxXwuqPea2ACbzd4hm5vicy2E"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0A8b3BTwBX_YNZIO4UIBGiEwtaBvaujAR7QSUdIaqUVYJvJDGKuKzyfjCFzNDUtybeaIf5SsaHDBCkVkm_eV4T02yaCS31pvS53nTR1XtHkUJ7Sm5ksqaDL5mEbGWY8IO9oBKAhXhdQ0sFtWhruQX1AbZOF0DmNiaybjd-brc-tCKhIL2QKw_Sn6svMFk_K8nEf9nDL9Bnff9sgq2125Gf1xM3-NgFqHhBruKNwZYYv7cVLlcXtiEvnpsrQxXMkZm"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -1070,9 +1064,9 @@
                   class="relative h-60 md:h-64 bg-surface-container-high overflow-hidden"
                 >
                   <img
+                    alt="Specialized industrial sounders, red and green visual alarm beacons, relay modules, call points, and early detection hardware."
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-alt="Technician team servicing and wiring an industrial emergency control cabinet in heavy industry setting."
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMtCW3wusx8k7Y-H7kDTOFzYYH21rf-dxbt1nl5HDs5fhg_uvqPR2BLuNlus4Xq00LSg5B_-oYW6EFDwdiJYaNBVnIPTYcOUWd90NRvWVamdjYMAZRGr3Cn4gEzbSPP3mW2SbBT_dz96G5x4VWfaiwnj_ng0q0raWwxYjNh2ZUU-E0efWzfIlOU8cqMPn0485IQplQtJ9NId2pGB1Jw5yqmKj-Ycw36bRvtezUAWFhahhLcHltGn5TwECsibESHe4"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtEolB4FkGEyPscYpcPFVS1ieoqzUpd2jU1b05ORTm0aM798uFhQX29fx2T-vMfxpSPsddw0r9C6eMasUgw7xhocoTcI8n4JtkzBh4TqlzVTxNnJzPzw5TqCqIrzizz43fzLW9OA4KkKGcPWsMlI-tZNQ2fuPtdGGGXpXIUjeoTKyuzXcV0H5ortmbjBl8KB1IePY8lBJ3tT5fMNjXxn4PtcMdcONtxmP3HMAw6yfmqOdpElr-9BlLTSz3BzzTyjCy"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -1118,7 +1112,7 @@
                   <img
                     alt="Substation electrical control cabinet labeled FED TO 480-MCP-010 with red fire sprinkler pipe lines."
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfD1q8_9kip0J6JhY_4SwCzDMYFzozvw1ZBPbWHIExXAH4Ij-_qAELm63YHimBkuyOh9LTC3oSBs1eP1ldgnUogXAY-xQU3-Ybgs1UkPpqKYl3MEY3EQeKRlAt0sn2gkWDnlMAcVkj_SPLv63MIOahQRVMFdGw6waucYhRBhCIy8pliOxDw3a-KPV2dJIuwdpjGjACbn9LmHUVKM5D7ptyZzeYXpKg_ftEi9DRp7Pwkp6H76dY317gDyHJ4Tiq-N_-"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZGTAR_6ycx3GP4cNbbvoUTRkvRWd47a1zGeFQCITbm53_7aS1JnTkPZUoMf2sjHBCiHMe7TiL3ybUTscSe_ubW9GEFV61NuuTbwUk0UDc4b6VRAKHuTXZ2XArMOo6KCeF4X6A2sw9YpssS4pVT5YB8mPM_dvgRyQ7GF9HoCnwcBDvOBkmIJ-ihV_k0Vfo_kJblI9gsR12CvdSz0NuanqH7grQkMQ44YMv9Ri_K7_e04j0N9exdb32GIWzKe2Dgbcz"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -1164,7 +1158,7 @@
                   <img
                     alt="Field technicians conducting ladder-assisted maintenance and live sensor calibration on high-voltage electrical facility."
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj-GDHx0Dr3B49xvrHhFC4F505VU-nFCj5-3Wg63Sjm_jnUdlmGTwb9s7ZlTm5nJnYdMK8H_XPsT77xZNr8oVdq0aW-pRrrSEEsEQpUA1jZb2jd6tbR792HOoiA_rKgqcDY6kWCl-ujmWcikPNoUEfY36XuTFTHcyBWG9A8OQ8rEu_mgRTY8Xh9tmw9n9wFKbzvlpK82vZa9aWod6_E6Ro8EYFxxtfHWHAN2D9Si_CcZmW3R2UznP7i6IJL7C6vgep"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEMplxHhZUufRGGaJn0uAt7DJfAHLuVc4tjd7k2utLJXhiE62PHV4yD7y3-o7hwHoyL7MUmPl63gXYc4iZlDVrUf2UziC0CztxT1Nka629oghBrbE4H7ZOaSr8KX9ARjSKzm-L7qkWZodJKuaWzWy1nTeeNAHcORyzEDf8b9UTrhU0xbI6rb7Gx7LHXtvDUn8VGZxPpK-aihDSmfiySudppxs7R_LtEvulzjzuptf4uO-_IT5nYFy_QgmOk_yEvkO0"
                   />
                   <div
                     class="absolute top-2 right-2 bg-surface/90 font-label-technical text-label-technical px-space-xs py-0.5 rounded text-primary shadow-sm"
@@ -1351,7 +1345,7 @@
                   <span class="font-semibold text-on-surface-variant"
                     >Mechanism:</span
                   >
-                  Vapor smothering + surface cooling
+                  Vapor blanket &amp; surface cooling
                 </div>
                 <div class="text-xs text-on-surface">
                   <span class="font-semibold text-on-surface-variant"
@@ -1519,34 +1513,33 @@
                   <p
                     class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-on-primary-container max-w-2xl"
                   >
-                    Engage our senior fire engineering specialists for a
-                    forensic review of your asset vulnerability, existing
-                    suppression lines, and compliance with SANS 10139 and ASIB
-                    standards.
+                    Engage our senior fire technicians for a forensic review of
+                    your asset vulnerability, calculated hydraulic hazard lines,
+                    client MCP cylinder management via Brigit testing, and
+                    compliance with SANS 10139 and ASIB standards.
                   </p>
                 </div>
                 <div
                   class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm"
                 >
                   <button
-                    class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-md text-center cursor-pointer"
+                    class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded bg-surface text-primary font-bold font-label-lg text-label-lg hover:bg-surface-container-high transition-colors shadow-sm text-center cursor-pointer"
                     onclick="copyPhoneNumber(this)"
                     type="button"
                   >
-                    <span class="material-symbols-outlined text-xl"
-                      >phone_in_talk</span
+                    <span class="material-symbols-outlined text-xl text-primary"
+                      >call</span
+                    ><span class="btn-text"
+                      >Copy Phone Number (+27 11 873-7593)</span
                     >
-                    <span class="btn-text">Direct Line: (011) 873-7593</span>
                   </button>
                   <button
-                    class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded bg-surface text-primary font-label-lg text-label-lg hover:bg-surface-container-high transition-colors shadow-sm text-center cursor-pointer"
+                    class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded bg-secondary text-on-secondary font-bold font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-md text-center cursor-pointer"
                     onclick="copyDraftEmail(this)"
                     type="button"
                   >
-                    <span class="material-symbols-outlined text-xl"
-                      >content_copy</span
-                    >
-                    <span class="btn-text">Copy Draft Email</span>
+                    <span class="material-symbols-outlined text-base">mail</span
+                    ><span class="btn-text">Copy Draft Email</span>
                   </button>
                 </div>
               </div>
@@ -1666,7 +1659,9 @@
                 onclick="copyPhoneNumber(this)"
                 type="button"
               >
-                <span class="btn-text">+27 (0)11 873-7593</span>
+                <span class="material-symbols-outlined text-sm text-secondary"
+                  >content_copy</span
+                ><span class="btn-text">Copy Tel: +27 (0)11 873-7593</span>
               </button>
             </div>
           </div>
@@ -1686,35 +1681,74 @@
       class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-2 flex justify-around items-center text-xs font-semibold shadow-lg"
     >
       <a
-        class="flex flex-col items-center gap-0.5 text-slate-500 hover:text-primary transition-colors py-1"
         href="index.html"
-        ><span class="material-symbols-outlined text-xl">home</span
-        ><span class="">Home</span></a
-      ><a
-        aria-current="page"
-        class="flex flex-col items-center gap-0.5 text-primary font-bold transition-colors py-1 border-b border-primary"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Home</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
+      <a
         href="services.html"
-        ><span class="material-symbols-outlined text-xl text-primary"
-          >precision_manufacturing</span
-        ><span class="">Services</span></a
-      ><button
-        class="flex flex-col items-center gap-0.5 text-secondary hover:text-secondary-container transition-colors py-1 font-bold"
-        onclick="copyDraftEmail(this)"
-        type="button"
-      >
-        <span class="material-symbols-outlined text-xl">mark_email_read</span
-        ><span class="btn-text">Draft Email</span></button
-      ><a
-        class="flex flex-col items-center gap-0.5 text-slate-500 hover:text-primary transition-colors py-1"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
+        ><svg
+          class="w-5 h-5 text-primary"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5 font-bold">Services</span
+        ><span class="w-1 h-1 rounded-full bg-primary mt-0.5"></span
+      ></a>
+      <a
         href="about.html"
-        ><span class="material-symbols-outlined text-xl">domain</span
-        ><span class="">About Us</span></a
-      ><a
-        class="flex flex-col items-center gap-0.5 text-slate-500 hover:text-primary transition-colors py-1"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">About Us</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
+      <a
         href="contact.html"
-        ><span class="material-symbols-outlined text-xl">support_agent</span
-        ><span class="">Contact</span></a
-      >
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Contact</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
     </nav>
     <!-- Shared Toast Notification Container -->
     <div
@@ -1729,7 +1763,7 @@
           id="copy-toast-icon"
           >check_circle</span
         >
-        <span id="copy-toast-text">Draft Copied to Clipboard!</span>
+        <span class="" id="copy-toast-text">Draft Copied to Clipboard!</span>
       </div>
     </div>
     <script>

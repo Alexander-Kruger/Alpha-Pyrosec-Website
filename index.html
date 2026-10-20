@@ -1,6 +1,5 @@
 <!doctype html>
-
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth" lang="en" style="">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -221,7 +220,7 @@
         id="copy-toast-icon"
         >check_circle</span
       >
-      <span id="copy-toast-message">Draft Copied to Clipboard!</span>
+      <span class="" id="copy-toast-message">Draft Copied to Clipboard!</span>
     </div>
     <!-- Desktop Top Header (visible on md and up) -->
     <header
@@ -231,20 +230,20 @@
         class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"
       >
         <div class="flex items-center gap-space-md shrink-0">
-          <a class="flex flex-col" href="index.html">
-            <div class="flex items-center gap-space-sm">
+          <a href="index.html" class="flex flex-col text-decoration-none group">
+            <div class="flex items-center gap-2">
               <span
-                class="font-headline-sm text-headline-sm text-primary tracking-tight"
+                class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
                 >ALPHA PYROSEC</span
               >
               <span
-                class="font-label-technical text-label-technical text-tertiary-container bg-tertiary-fixed px-space-xs py-0.5 rounded"
+                class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
                 >EST. 1993</span
               >
             </div>
             <span
-              class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-wider"
-              >Fire Protection Specialists cc</span
+              class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+              >FIRE PROTECTION SPECIALISTS CC</span
             >
           </a>
         </div>
@@ -283,16 +282,16 @@
             class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-low text-primary hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"
             href="tel:+27118737593"
             onclick="handlePhoneCopy(event, '+27118737593', this)"
-          >
-            <span
+            ><span class="material-symbols-outlined text-[16px]"
+              >content_copy</span
+            ><span
               class="font-label-technical text-label-technical text-on-surface-variant"
               >TEL:</span
-            >
-            <span
+            ><span
               class="font-label-lg text-label-lg text-primary tracking-tight btn-text"
-              >+27 (0)11 873-7593</span
-            >
-          </a>
+              >Copy: +27 (0)11 873-7593</span
+            ></a
+          >
           <button
             class="inline-flex items-center justify-center gap-1.5 px-space-lg py-space-sm rounded bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-[0_1px_3px_rgba(15,23,42,0.05)] cursor-pointer"
             onclick="handleCopyDraft(this)"
@@ -310,37 +309,40 @@
     <header
       class="flex md:hidden items-center justify-between py-3 px-4 bg-white border-b border-slate-200 sticky top-0 z-40"
     >
-      <a class="flex flex-col" href="index.html">
-        <div class="flex items-center gap-1.5">
+      <a href="index.html" class="flex flex-col text-decoration-none group">
+        <div class="flex items-center gap-2">
           <span
-            class="font-headline-sm text-base text-primary font-bold tracking-tight"
+            class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
             >ALPHA PYROSEC</span
           >
           <span
-            class="font-label-technical text-[10px] text-tertiary-container bg-tertiary-fixed px-1 py-0.5 rounded"
+            class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
             >EST. 1993</span
           >
         </div>
         <span
-          class="font-label-technical text-[10px] text-on-surface-variant uppercase tracking-wider"
-          >Fire Protection Specialists</span
+          class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+          >FIRE PROTECTION SPECIALISTS CC</span
         >
       </a>
       <div class="flex items-center gap-2">
-        <a
-          aria-label="Call alpha pyrosec"
-          class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface-container text-primary hover:bg-surface-container-high transition-colors cursor-pointer"
-          href="tel:+27118737593"
-          onclick="handlePhoneCopy(event, '+27118737593', this)"
-        >
-          <span class="material-symbols-outlined text-[20px]">call</span>
-        </a>
         <button
-          class="inline-flex items-center justify-center px-2.5 py-1.5 rounded bg-secondary text-on-secondary text-xs font-semibold hover:bg-secondary-container transition-colors cursor-pointer"
+          aria-label="Copy Alpha Pyrosec phone number"
+          class="inline-flex items-center justify-center gap-1.5 h-10 px-3 rounded-full bg-surface-container text-primary hover:bg-surface-container-high transition-colors cursor-pointer text-xs font-semibold shrink-0 shadow-sm"
+          onclick="handlePhoneCopy(event, '+27118737593', this)"
+          type="button"
+        >
+          <span class="material-symbols-outlined text-[16px]">call</span
+          ><span class="btn-text">Copy Tel</span>
+        </button>
+        <button
+          aria-label="Copy Draft Email"
+          class="inline-flex items-center justify-center gap-1.5 h-10 px-3 rounded-full bg-secondary text-on-secondary text-xs font-semibold hover:bg-secondary-container transition-colors cursor-pointer shrink-0 shadow-sm"
           onclick="handleCopyDraft(this)"
           type="button"
         >
-          <span class="btn-text">Copy Draft Email</span>
+          <span class="material-symbols-outlined text-[16px]">mail</span
+          ><span class="btn-text">Draft Email</span>
         </button>
       </div>
     </header>
@@ -487,7 +489,7 @@
                   <img
                     alt="Alpha Pyrosec certified on-site technical team in full safety gear outside high-voltage flux handling MCC fire control station"
                     class="w-full h-[380px] sm:h-[460px] lg:h-[520px] object-cover object-center"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbxPL0evRU3ges-s6tg4FwdoKeGGZyFUzAXSH4D2F8SKL9yseOomBdnk81mFULls7i87M_HDfNj_fVlEO3u8jjo9vPcYqol8jVFzsRyHlSksG6YHuhPKX6mGUeOgf_zGeE0057h8JYMyAlBoV77tg9SBStgfD4amsLs3Ml9_4AGRopJlQEf3nC6rjvs4N1RYva9gSESvSAFbWXyrPyeSiEOvKjrv5I8kFc3RXcJmUhAsGPWHXh9NyvSa2X1iGPFeE"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuRNdF5_61HJLXBS8YRLHAF8ksgWEncJWJgyhtQJJcWczePbdAkS3AWKwdkiIyJk1PpCs35C12HeUt_Rvl67S5Rv-7ck9tsoSTzC-RHul9d3M0VxU7QsOZ95XHMF27o6tw6enTJ4WMYDVdOWyokLL_dQvNcs9Zu-IpJukEwIXMgWW9CtH6_bZESk1bQdAB5Lq28riVqTTBmdVedVRnIdvIuXUs1jodfvhRGJQXxIBBbaaRe4nRZCBcpHUNjoqj5s1e"
                   />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-transparent flex flex-col justify-end p-space-md sm:p-space-lg text-on-primary"
@@ -505,8 +507,7 @@
                     <h2
                       class="font-headline-sm text-lg sm:text-headline-sm font-bold text-on-primary leading-tight"
                     >
-                      Meshack, Cutbeth &amp; Alpha Senior Technical Engineering
-                      Crew
+                      Meshack, Cutbeth &amp; Alpha Senior Technical Crew
                     </h2>
                     <p
                       class="font-body-sm text-body-sm text-primary-fixed pt-1"
@@ -741,9 +742,9 @@
                     class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
                   >
                     From hydraulic hazard calculations and architectural CAD
-                    design to gas manifold fabrication, on-site commissioning,
-                    pressure testing, and hydrostatic cylinder testing — we
-                    control every phase.
+                    design to clients providing MCP cylinders which we send to
+                    Brigit for specialized processing, pressure testing, and
+                    hydrostatic cylinder testing — we control every phase.
                   </p>
                 </div>
                 <div
@@ -899,7 +900,7 @@
                   <img
                     alt="High-pressure Pyroshield IG-55 clean agent fire suppression cylinder bank with stainless steel discharge manifold, flex hoses and pressure gauges on industrial concrete plinth"
                     class="w-full h-[320px] sm:h-[400px] object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-3t7UlPlNapRYF_m4SX5wD0ruicgr8CbbV3oBRGQk9xDqRhcXBPN0a1_3US4k1ItJGwcfemQRtYD4b_BTlzJgjIrVW-l0zFJfGv3_RAR2IVqupVra-7My3C33dcvRi25SweWL70Q34PKFv0U8ruY4Km3oUVfqnP0WYDkp-kFFFAwfCmHZysVaCzgu7SqjEALLKXGIVOKERq06EC9XFd76MMGTa_tNzX9xr_rZm0NuODdaxRoDwD6R1a-Dz7h0R_JY"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9PTamPDDQXpq3XlnZCBbiSzuisYQpy5tGMOwmHwZlwnWeZTD-9bnhh1D7FZJg4Epya2R50oRP44cgbw51NM3A5sxOaQbNVFOskFfUvJFz6Kjaip86qTEOgnwTq9DKTYxy4gPy5DK1i6kgz3u4t1ftapBQaHGeqYZFSo2YI6dWP9Dnff07EUO8zlm3wYQmNP5feCnVFBninMtQFfYvb4VlFUulX4xudDAOIGm8l9MojffIjBIuVFkOj2QBSkMFcJyD"
                   />
                   <div
                     class="p-space-md bg-surface-container-lowest flex items-center justify-between"
@@ -1077,7 +1078,7 @@
                 <h2
                   class="font-headline-lg text-2xl sm:text-headline-lg text-primary tracking-tight"
                 >
-                  Certified Engineers on the Ground. Every Single Shift.
+                  Certified Technicians on the Ground. Every Single Shift.
                 </h2>
                 <p
                   class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
@@ -1088,7 +1089,8 @@
                     their hand.</span
                   >
                   When Alpha Pyrosec signs off on an installation or scheduled
-                  maintenance log, our own certified engineers perform the work.
+                  maintenance log, our own certified technicians perform the
+                  work.
                 </p>
                 <div class="space-y-space-sm pt-space-xs">
                   <div class="flex items-start gap-space-sm">
@@ -1168,9 +1170,9 @@
                   class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container"
                 >
                   <img
-                    alt="Alpha Pyrosec technical field technicians standing in front of high-pressure clean agent cylinder bank under a protective industrial canopy with yellow cylinder collars"
+                    alt="Alpha Pyrosec certified technicians in safety helmets and workwear celebrating teamwork and zero-incident field compliance"
                     class="w-full h-[380px] sm:h-[480px] object-cover object-top"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj2iD5dt_wKDTpWv0A5jNxg4W2Zbz5yFn7Apc2RFVdSd51OLbs3k0jlWpvArxhWaazamEFw3ayY2Ic17lIt4lJ_P2fein55WWTENQoW4_-Oha_TdMjmUGmknh65UA-fGZk2IsTCWwT6loPItTWfu6uoE0cwewjNkMJ6Lf3e_Pq3lzh0Rr9ZKY5YOLOxjgUavOaX0nLCGZwgNVKKF4CBFXjPFUwXdVVz7edrkKJSpBSGwCCcO0_SgPOh1Gz16SUcoLk"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFE6YqAaUrP-_CJw5vZwPXRHw0IoO5PA_0cfZvmyvNUlvemMvVpESLmSIySofSOq68aeK7jsFY-_qD5JNIpGUZlVaWy9eLHfkVvNKfir7VJi42ppZrIQYdY4cwgp8PkOoohysqUIyM3684SghyD3R6FbZQmoadWQJoP0sgz-P5ehOvnYCEokU6O44C6CZpS2wfpq8EUDqDIdzRnePvTBW1-y-kVu_KgQc1yFA1WgueIxpk-cosijosOrvMcRokd4xS"
                   />
                   <div
                     class="absolute bottom-0 inset-x-0 p-space-md bg-gradient-to-t from-inverse-surface/95 via-inverse-surface/80 to-transparent text-inverse-on-surface"
@@ -1291,7 +1293,7 @@
                   <p
                     class="font-body-md text-body-md text-primary-fixed leading-relaxed max-w-2xl"
                   >
-                    Connect directly with our engineering directors. We provide
+                    Connect directly with our technical directors. We provide
                     comprehensive risk surveys, hydraulic assessments,
                     compliance audits, and competitive tender quotations with
                     guaranteed standard adherence.
@@ -1335,24 +1337,24 @@
                   class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-stretch lg:items-end gap-space-md"
                 >
                   <button
-                    class="w-full text-center inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-all shadow-md cursor-pointer"
-                    onclick="handleCopyDraft(this)"
-                    type="button"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >content_copy</span
-                    >
-                    <span class="btn-text">Copy Draft Email</span>
-                  </button>
-                  <button
-                    class="w-full text-center inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded bg-surface-container-lowest text-primary font-label-lg text-label-lg hover:bg-surface-variant transition-colors cursor-pointer"
+                    class="w-full text-center inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded bg-white text-primary font-bold font-label-lg text-label-lg hover:bg-surface-variant transition-colors shadow-sm cursor-pointer"
                     onclick="handlePhoneCopy(event, '+27118737593', this)"
                     type="button"
                   >
                     <span class="material-symbols-outlined text-[20px]"
-                      >phone_in_talk</span
+                      >call</span
+                    ><span class="btn-text"
+                      >Copy Phone Number (+27 11 873-7593)</span
                     >
-                    <span class="btn-text">Call Engineering Desk</span>
+                  </button>
+                  <button
+                    class="w-full text-center inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded bg-secondary text-white font-bold font-label-lg text-label-lg hover:bg-secondary-container transition-all shadow-md cursor-pointer"
+                    onclick="handleCopyDraft(this)"
+                    type="button"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >mail</span
+                    ><span class="btn-text">Copy Draft Email</span>
                   </button>
                 </div>
               </div>
@@ -1473,9 +1475,12 @@
                 class="font-label-lg text-label-lg text-primary hover:underline cursor-pointer"
                 href="tel:+27118737593"
                 onclick="handlePhoneCopy(event, '+27118737593', this)"
+                ><span
+                  class="material-symbols-outlined text-[16px] inline-block align-middle"
+                  >content_copy</span
+                >
+                <span class="btn-text">Copy Tel: +27 (0)11 873-7593</span></a
               >
-                <span class="btn-text">+27 (0)11 873-7593</span>
-              </a>
             </div>
           </div>
         </div>
@@ -1491,37 +1496,77 @@
     </footer>
     <!-- Mobile Fixed Bottom Tab Bar -->
     <nav
-      class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-2 flex justify-around items-center text-xs font-semibold shadow-[0_-2px_10px_rgba(0,0,0,0.05)]"
+      class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200 px-2 py-2 flex justify-around items-center text-xs font-semibold shadow-[0_-2px_10px_rgba(0,0,0,0.05)]"
     >
-      <a class="flex flex-col items-center gap-1 text-primary" href="index.html"
-        ><span class="material-symbols-outlined text-[22px]">home</span
-        ><span class="text-[11px] leading-none font-bold">Home</span
+      <a
+        href="index.html"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
+        ><svg
+          class="w-5 h-5 text-primary"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+        ><span class="text-[11px] leading-tight mt-0.5 font-bold">Home</span
         ><span class="w-1 h-1 rounded-full bg-primary mt-0.5"></span
       ></a>
       <a
-        class="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors"
         href="services.html"
-      >
-        <span class="material-symbols-outlined text-[22px]">construction</span>
-        <span class="text-[11px] leading-none">Services</span>
-      </a>
-      <a
-        class="flex flex-col items-center gap-1 text-slate-500 hover:text-primary transition-colors"
-        href="about.html"
-      >
-        <span class="material-symbols-outlined text-[22px]">info</span>
-        <span class="text-[11px] leading-none">About Us</span>
-      </a>
-      <button
-        class="flex flex-col items-center gap-1 text-secondary hover:text-secondary-container transition-colors cursor-pointer"
-        onclick="handleCopyDraft(this)"
-        type="button"
-      >
-        <span class="material-symbols-outlined text-[22px]">content_copy</span>
-        <span class="text-[11px] leading-none btn-text font-bold"
-          >Copy Draft</span
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
         >
-      </button>
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Services</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
+      <a
+        href="about.html"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">About Us</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
+      <a
+        href="contact.html"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Contact</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
     </nav>
     <script>
       const draftEmailContent = `To: rudie.alphapyrosec@gmail.com

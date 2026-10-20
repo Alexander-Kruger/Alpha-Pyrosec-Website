@@ -232,19 +232,19 @@
         class="h-20 max-w-7xl mx-auto px-gutter w-full flex items-center justify-between gap-space-md"
       >
         <div class="flex items-center gap-space-md shrink-0">
-          <a class="flex flex-col" href="index.html"
-            ><div class="flex items-center gap-space-sm">
+          <a href="index.html" class="flex flex-col text-decoration-none group"
+            ><div class="flex items-center gap-2">
               <span
-                class="font-headline-sm text-headline-sm text-primary tracking-tight"
+                class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
                 >ALPHA PYROSEC</span
               ><span
-                class="font-label-technical text-label-technical text-tertiary-container bg-tertiary-fixed px-space-xs py-0.5 rounded"
+                class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
                 >EST. 1993</span
               >
             </div>
             <span
-              class="font-label-technical text-label-technical text-on-surface-variant uppercase tracking-wider"
-              >Fire Protection Specialists cc</span
+              class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+              >FIRE PROTECTION SPECIALISTS CC</span
             ></a
           >
         </div>
@@ -303,40 +303,39 @@
     <header
       class="flex md:hidden sticky top-0 z-40 w-full bg-surface/95 backdrop-blur-md border-b border-outline-variant/30 px-4 py-3 items-center justify-between"
     >
-      <a class="flex flex-col" href="index.html">
-        <div class="flex items-center gap-1.5">
+      <a href="index.html" class="flex flex-col text-decoration-none group"
+        ><div class="flex items-center gap-2">
           <span
-            class="font-bold text-primary text-base tracking-tight leading-tight"
+            class="text-xl md:text-2xl font-black tracking-tight uppercase text-slate-900 group-hover:text-primary transition-colors"
             >ALPHA PYROSEC</span
-          >
-          <span
-            class="text-[9px] font-bold text-tertiary-container bg-tertiary-fixed px-1 py-0.5 rounded leading-none"
+          ><span
+            class="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 border border-amber-300"
             >EST. 1993</span
           >
         </div>
         <span
-          class="text-[10px] text-on-surface-variant uppercase tracking-wider leading-tight"
-          >Fire Protection Specialists cc</span
-        >
-      </a>
+          class="text-[10px] font-bold tracking-wider text-slate-500 uppercase mt-0.5"
+          >FIRE PROTECTION SPECIALISTS CC</span
+        ></a
+      >
       <div class="flex items-center gap-2">
-        <a
-          aria-label="Tap to Call Alpha Pyrosec"
-          class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secondary text-on-secondary shadow-sm"
-          href="tel:+27118737593"
-          onclick="handleCopyPhone(event, '+27 11 873 7593')"
-        >
-          <span class="material-symbols-outlined text-[18px]">phone</span>
-        </a>
         <button
-          class="px-3 py-1.5 rounded bg-primary text-on-primary text-xs font-semibold flex items-center gap-1"
-          onclick="handleCopyDraftEmail(this)"
           type="button"
+          onclick="handleCopyPhone(event, '+27 11 873 7593')"
+          class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-full bg-surface-container-low text-primary text-xs font-semibold border border-outline-variant/30 hover:bg-surface-container transition-colors shadow-sm cursor-pointer"
+          aria-label="Copy Phone Number"
         >
-          <span class="material-symbols-outlined text-[14px]"
-            >content_copy</span
-          >
-          <span class="">Copy Draft Email</span>
+          <span class="material-symbols-outlined text-[15px] text-secondary"
+            >phone</span
+          ><span class="">Copy Tel</span></button
+        ><button
+          type="button"
+          onclick="handleCopyDraftEmail(this)"
+          class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-full bg-secondary text-on-secondary text-xs font-semibold hover:bg-secondary-container transition-colors shadow-sm cursor-pointer"
+          aria-label="Copy Draft Email"
+        >
+          <span class="material-symbols-outlined text-[15px]">content_copy</span
+          ><span class="">Draft Email</span>
         </button>
       </div>
     </header>
@@ -357,10 +356,9 @@
                 <div class="flex items-center gap-space-sm">
                   <span
                     class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-surface-container text-primary font-label-technical text-label-technical uppercase"
+                    ><span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Direct Technical Dispatch</span
                   >
-                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                    Direct Engineering Dispatch
-                  </span>
                   <span
                     class="font-label-technical text-label-technical text-on-surface-variant"
                     >EST. 1993 // SANS COMPLIANT</span
@@ -374,7 +372,7 @@
                 <p
                   class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant"
                 >
-                  Connect with our fire engineering specialists for new
+                  Connect with our certified fire technicians for new
                   installation tenders, commercial retrofits, risk surveys, or
                   maintenance contracts.
                 </p>
@@ -406,10 +404,149 @@
             </div>
           </div>
         </section>
-        <!-- Main Technical Split Grid -->
+        <!-- Direct Contact Channels & Leadership Grid -->
         <section
-          class="max-w-7xl mx-auto px-gutter py-space-xl md:py-space-2xl w-full"
-        ></section>
+          class="max-w-7xl mx-auto px-gutter py-space-lg md:py-space-xl w-full"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <!-- Leadership Card: Belinda Dos Santos -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between"
+            >
+              <div class="space-y-space-xs">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-technical text-label-technical uppercase text-secondary font-bold"
+                    >Executive Office</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >manage_accounts</span
+                  >
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Belinda Dos Santos
+                </h3>
+                <p
+                  class="font-label-technical text-label-technical text-on-surface-variant"
+                >
+                  Chief Executive Officer / Managing Member
+                </p>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant pt-2"
+                >
+                  Direct executive signoffs, municipal approvals, client
+                  contractual agreements, and commercial risk administration.
+                </p>
+              </div>
+              <div
+                class="pt-space-md mt-space-md border-t border-outline-variant/30 flex flex-col gap-2"
+              >
+                <a
+                  class="inline-flex items-center gap-2 text-primary hover:underline font-label-lg text-label-lg"
+                  href="mailto:belinda@alphapyro.co.za"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >email</span
+                  >
+                  <span class="">belinda@alphapyro.co.za</span>
+                </a>
+              </div>
+            </div>
+            <!-- Leadership Card: Rudie Kruger -->
+            <div
+              class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between"
+            >
+              <div class="space-y-space-xs">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-technical text-label-technical uppercase text-secondary font-bold"
+                    >Technical Operations</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-primary text-[20px]"
+                    >engineering</span
+                  >
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Rudie Kruger
+                </h3>
+                <p
+                  class="font-label-technical text-label-technical text-on-surface-variant"
+                >
+                  Commercial Director &amp; Lead Technical Specialist
+                </p>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant pt-2"
+                >
+                  Technical project tenders, hydraulic risk assessments, ASIB
+                  compliance rectification, and gaseous extinguishing
+                  engineering.
+                </p>
+              </div>
+              <div
+                class="pt-space-md mt-space-md border-t border-outline-variant/30 flex flex-col gap-2"
+              >
+                <a
+                  class="inline-flex items-center gap-2 text-primary hover:underline font-label-lg text-label-lg"
+                  href="mailto:rudie@alphapyro.co.za"
+                >
+                  <span class="material-symbols-outlined text-[18px]"
+                    >email</span
+                  >
+                  <span class="">rudie@alphapyro.co.za</span>
+                </a>
+              </div>
+            </div>
+            <!-- Direct Engineering Line -->
+            <div
+              class="bg-surface-container p-space-lg rounded-xl shadow-sm border border-primary/20 flex flex-col justify-between"
+            >
+              <div class="space-y-space-xs">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="font-label-technical text-label-technical uppercase text-primary font-bold"
+                    >Direct Line &amp; Dispatch</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >phone_in_talk</span
+                  >
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Head Office Reception
+                </h3>
+                <p
+                  class="font-label-technical text-label-technical text-on-surface-variant"
+                >
+                  Germiston South Central Exchange
+                </p>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant pt-2"
+                >
+                  Immediate technician routing for Gauteng industrial
+                  emergencies, system alarms, maintenance bookings, and parts
+                  delivery.
+                </p>
+              </div>
+              <div
+                class="pt-space-md mt-space-md border-t border-outline-variant/30 flex flex-col gap-2"
+              >
+                <a
+                  class="inline-flex items-center gap-2 text-primary font-bold text-headline-sm hover:underline cursor-pointer"
+                  href="tel:+27118737593"
+                  onclick="handleCopyPhone(event, '+27 (0)11 873-7593')"
+                >
+                  <span
+                    class="material-symbols-outlined text-[20px] text-secondary"
+                    >call</span
+                  >
+                  <span class="">+27 (0)11 873-7593</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- Service Coverage & Rapid Deployment Operations Section -->
         <section
           class="w-full bg-surface-container-low py-space-xl md:py-space-2xl"
@@ -446,18 +583,170 @@
                 </div>
               </div>
             </div>
-            <!-- Region Cards + Deployment Hub Layout -->
+            <!-- Centered HQ Logistics Hub Map Card (Prominent Centerpiece) -->
+            <div
+              class="w-full max-w-5xl mx-auto bg-surface-container-lowest rounded-2xl shadow-md border border-outline-variant/40 overflow-hidden"
+            >
+              <div
+                class="p-space-lg md:p-space-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-outline-variant/20 bg-gradient-to-r from-surface-container-lowest via-surface-container-low/40 to-surface-container-lowest"
+              >
+                <div class="space-y-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px]"
+                      >location_on</span
+                    >
+                    <span
+                      class="font-label-technical text-label-technical uppercase text-secondary font-bold"
+                      >Central Technical Dispatch Base</span
+                    >
+                  </div>
+                  <h3 class="font-headline-md text-headline-md text-primary">
+                    Germiston South Logistics Hub
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    18 Kinross Street, Germiston South, 1411 • Gauteng, South
+                    Africa
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-space-sm shrink-0"
+                >
+                  <div
+                    class="px-space-md py-space-xs bg-surface-container rounded-lg border border-outline-variant/30 text-center sm:text-right"
+                  >
+                    <div
+                      class="text-[10px] font-label-technical text-on-surface-variant uppercase tracking-wider"
+                    >
+                      GPS Coordinates
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm font-mono font-bold text-primary"
+                    >
+                      -26.2307° S, 28.1729° E
+                    </div>
+                  </div>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 px-space-md py-space-xs rounded bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-colors shadow-sm"
+                    href="https://maps.google.com/?q=-26.2307,28.1729"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >directions</span
+                    >
+                    <span class="">Open in Maps</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Interactive / Centered Map Container -->
+              <div
+                class="relative w-full h-80 md:h-96 bg-cover bg-center overflow-hidden"
+                data-location="18 Kinross Street, Germiston South, Gauteng, South Africa"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBeKyiJxek_XseVOz3kyr6DRqfrRFeYOS1I7eJIlguccs-MJzT-VmNywcQCNlfRii5uZJt6jXXakoeG3EiA8lOXBlIFGYR61vnOlt4aksmp2_l37wh-rB_bhtFvGvqZRyfz-v438wp74Ywu_PXMgd9Bcx2r-hl06wH8lufrPvkSxwJtZ1pNALWqNZgnt-LCCh0w5viHVocuAaGHGDbHpsRyPFZiWksHbj1N4oUY1egg_R_cOaG7G_0&quot;);
+                "
+              >
+                <!-- Map Center Pin Overlay -->
+                <div
+                  class="absolute inset-0 bg-primary/15 backdrop-brightness-95 flex items-center justify-center p-4"
+                >
+                  <div
+                    class="bg-surface-container-lowest/95 backdrop-blur-md px-6 py-4 rounded-xl shadow-2xl text-center space-y-1.5 border border-primary/20 max-w-sm"
+                  >
+                    <div
+                      class="inline-flex items-center gap-2 text-secondary font-bold font-headline-sm text-headline-sm"
+                    >
+                      <span
+                        class="material-symbols-outlined text-[28px] text-secondary"
+                        >crisis_alert</span
+                      >
+                      <span class="">Alpha Pyrosec HQ</span>
+                    </div>
+                    <div
+                      class="font-body-md text-body-md text-on-surface font-semibold"
+                    >
+                      18 Kinross St, Germiston South
+                    </div>
+                    <div
+                      class="font-label-technical text-label-technical text-primary font-bold tracking-wider"
+                    >
+                      DIRECT HIGHWAY ACCESS • N3 / M2 / R59 ARTERIALS
+                    </div>
+                    <div
+                      class="pt-1 flex items-center justify-center gap-2 text-[11px] text-on-surface-variant"
+                    >
+                      <span
+                        class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"
+                      ></span>
+                      <span class="">Rapid Fleet Dispatch Ready</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Highway & Tactical Connectivity Badges -->
+              <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-space-xs p-space-md bg-surface-container-low border-t border-outline-variant/30 text-center"
+              >
+                <div class="p-space-xs">
+                  <div
+                    class="font-label-technical text-label-technical text-on-surface-variant uppercase"
+                  >
+                    Primary Corridors
+                  </div>
+                  <div
+                    class="font-label-lg text-label-lg font-bold text-primary"
+                  >
+                    N3, M2 &amp; R59 Arterials
+                  </div>
+                </div>
+                <div class="p-space-xs">
+                  <div
+                    class="font-label-technical text-label-technical text-on-surface-variant uppercase"
+                  >
+                    Witwatersrand Basin
+                  </div>
+                  <div
+                    class="font-label-lg text-label-lg font-bold text-primary"
+                  >
+                    ≤ 45m Direct Arrival
+                  </div>
+                </div>
+                <div class="p-space-xs">
+                  <div
+                    class="font-label-technical text-label-technical text-on-surface-variant uppercase"
+                  >
+                    Workforce Base
+                  </div>
+                  <div
+                    class="font-label-lg text-label-lg font-bold text-secondary"
+                  >
+                    100% In-House Qualified
+                  </div>
+                </div>
+                <div class="p-space-xs">
+                  <div
+                    class="font-label-technical text-label-technical text-on-surface-variant uppercase"
+                  >
+                    Emergency SLA
+                  </div>
+                  <div
+                    class="font-label-lg text-label-lg font-bold text-primary"
+                  >
+                    24/7 Priority Standby
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Regional Grid & Technical Workforce Cards -->
             <div
               class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch"
             >
-              <!-- Regional Grid: 4 Core Focus Areas (7 Columns) -->
+              <!-- Gauteng Hub & In-House Workforce Card (7 Columns) with authentic photography -->
               <div
-                class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md"
+                class="lg:col-span-7 bg-surface-container rounded-xl overflow-hidden shadow-sm p-space-lg flex flex-col justify-between space-y-space-md border border-outline-variant/30"
               >
-                <!-- Gauteng Hub -->
-                <div
-                  class="relative bg-surface-container rounded-xl overflow-hidden shadow-sm p-space-lg flex flex-col space-y-space-md border border-outline-variant/30"
-                >
+                <div>
                   <div
                     class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs border-b border-outline-variant/30"
                   >
@@ -476,7 +765,7 @@
                       <span class="">ZERO SUBCONTRACTING STANDARD</span>
                     </div>
                   </div>
-                  <div class="space-y-space-xs">
+                  <div class="space-y-space-xs mt-space-sm">
                     <h3 class="font-headline-sm text-headline-sm text-primary">
                       Direct Field Execution &amp; Site Accountability
                     </h3>
@@ -486,14 +775,34 @@
                       All routine inspections, specialized gaseous
                       installations, smoke evacuation audits, and VESDA system
                       overhauls are performed exclusively by full-time employed
-                      Alpha Pyrosec engineers and technicians. Strict direct
-                      deployment ensures complete traceability under South
-                      African national safety and insurance guidelines.
+                      Alpha Pyrosec technicians. We facilitate specialized
+                      hydraulic hazard calculations, while client-supplied MCP
+                      cylinders are managed through Brigit for certified
+                      pressure testing and processing under South African
+                      national safety and insurance guidelines.
                     </p>
                   </div>
+                </div>
+                <!-- Authentic Photo Reference & Credentials -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-space-md items-center pt-space-xs"
+                >
                   <div
-                    class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs"
+                    class="sm:col-span-1 rounded-lg overflow-hidden border border-outline-variant/40 shadow-sm bg-surface-container-lowest"
                   >
+                    <img
+                      alt="Alpha Pyrosec SAQCC-Certified Field Engineering Team"
+                      class="w-full h-44 object-cover object-top"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFE6YqAaUrP-_CJw5vZwPXRHw0IoO5PA_0cfZvmyvNUlvemMvVpESLmSIySofSOq68aeK7jsFY-_qD5JNIpGUZlVaWy9eLHfkVvNKfir7VJi42ppZrIQYdY4cwgp8PkOoohysqUIyM3684SghyD3R6FbZQmoadWQJoP0sgz-P5ehOvnYCEokU6O44C6CZpS2wfpq8EUDqDIdzRnePvTBW1-y-kVu_KgQc1yFA1WgueIxpk-cosijosOrvMcRokd4xS"
+                    />
+                    <div class="p-1.5 text-center bg-surface-container-lowest">
+                      <span
+                        class="text-[10px] font-label-technical text-primary font-bold block uppercase"
+                        >Certified Engineering Unit</span
+                      >
+                    </div>
+                  </div>
+                  <div class="sm:col-span-2 grid grid-cols-2 gap-space-xs">
                     <div
                       class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col items-center text-center shadow-sm space-y-1"
                     >
@@ -556,11 +865,16 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <!-- Regional Corridors: Mpumalanga & Regional Hubs (5 Columns) -->
+              <div
+                class="lg:col-span-5 flex flex-col gap-space-md justify-between"
+              >
                 <!-- Mpumalanga Mining Corridors -->
                 <div
-                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md"
+                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-sm border border-outline-variant/30 flex-1"
                 >
-                  <div class="space-y-space-sm">
+                  <div class="space-y-space-xs">
                     <div class="flex items-center justify-between">
                       <div class="flex items-center gap-space-xs">
                         <span
@@ -610,20 +924,6 @@
                         >
                       </div>
                     </div>
-                    <div class="flex flex-wrap gap-1.5 pt-space-xs">
-                      <span
-                        class="text-[10px] font-label-technical px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
-                        >Transformer Deluge</span
-                      >
-                      <span
-                        class="text-[10px] font-label-technical px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
-                        >Coal Conveyor Inerting</span
-                      >
-                      <span
-                        class="text-[10px] font-label-technical px-2 py-0.5 rounded bg-surface-container text-on-surface font-semibold"
-                        >Substation Gaseous</span
-                      >
-                    </div>
                   </div>
                   <div
                     class="pt-space-xs border-t border-outline-variant/30 flex items-center justify-between text-[12px] text-on-surface font-semibold"
@@ -641,144 +941,72 @@
                     >
                   </div>
                 </div>
-                <!-- North West & Limpopo Operations -->
-                <div
-                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md"
-                >
-                  <div class="space-y-space-xs">
-                    <div class="flex items-center justify-between">
-                      <span
-                        class="font-headline-sm text-headline-sm text-primary"
-                        >NW &amp; Limpopo</span
-                      >
-                      <span
-                        class="font-label-technical text-label-technical px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold"
-                        >REGIONAL RUNS</span
-                      >
-                    </div>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant"
-                    >
-                      Platinum belt processing infrastructure in Rustenburg,
-                      Brits industrial estates, and mineral extraction complexes
-                      throughout Polokwane.
-                    </p>
-                  </div>
+                <!-- Bottom Duo: NW / Limpopo & National Accounts -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                  <!-- North West & Limpopo Operations -->
                   <div
-                    class="text-[12px] text-on-surface font-semibold flex items-center gap-1.5"
+                    class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between space-y-space-xs border border-outline-variant/30"
                   >
-                    <span
-                      class="material-symbols-outlined text-primary text-[16px]"
-                      >local_shipping</span
-                    >
-                    Scheduled Mobile Calibration Units
-                  </div>
-                </div>
-                <!-- Nationwide Commercial Contracts -->
-                <div
-                  class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md"
-                >
-                  <div class="space-y-space-xs">
-                    <div class="flex items-center justify-between">
-                      <span
-                        class="font-headline-sm text-headline-sm text-primary"
-                        >National Accounts</span
-                      >
-                      <span
-                        class="font-label-technical text-label-technical px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold"
-                        >TURNKEY</span
-                      >
-                    </div>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant"
-                    >
-                      Standardized multi-site risk maintenance agreements for
-                      property management conglomerates, national logistics
-                      distribution centers, and telecom towers.
-                    </p>
-                  </div>
-                  <div
-                    class="text-[12px] text-on-surface font-semibold flex items-center gap-1.5"
-                  >
-                    <span
-                      class="material-symbols-outlined text-primary text-[16px]"
-                      >verified_user</span
-                    >
-                    Centralized SABS Logbook Auditing
-                  </div>
-                </div>
-              </div>
-              <!-- Geographic Operations & Interactive Map Card (5 Columns) -->
-              <div
-                class="lg:col-span-5 bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col justify-between"
-              >
-                <div class="p-space-lg space-y-space-xs">
-                  <div class="flex items-center justify-between">
-                    <span
-                      class="font-label-technical text-label-technical uppercase text-primary font-bold"
-                      >Engineering Dispatch Base</span
-                    >
-                    <span
-                      class="text-on-surface-variant font-body-sm text-body-sm font-mono"
-                      >-26.2307° S, 28.1729° E</span
-                    >
-                  </div>
-                  <h3 class="font-headline-sm text-headline-sm text-primary">
-                    Germiston South Logistics Hub
-                  </h3>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant">
-                    Strategic access to the N3, M2, and R59 highways for
-                    immediate tactical response throughout the Witwatersrand
-                    industrial axis.
-                  </p>
-                </div>
-                <!-- Static Location Pipeline Canvas Container -->
-                <div
-                  class="w-full h-64 bg-cover bg-center relative"
-                  data-location="18 Kinross Street, Germiston South, Gauteng, South Africa"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBeKyiJxek_XseVOz3kyr6DRqfrRFeYOS1I7eJIlguccs-MJzT-VmNywcQCNlfRii5uZJt6jXXakoeG3EiA8lOXBlIFGYR61vnOlt4aksmp2_l37wh-rB_bhtFvGvqZRyfz-v438wp74Ywu_PXMgd9Bcx2r-hl06wH8lufrPvkSxwJtZ1pNALWqNZgnt-LCCh0w5viHVocuAaGHGDbHpsRyPFZiWksHbj1N4oUY1egg_R_cOaG7G_0&quot;);
-                  "
-                >
-                  <!-- Map Overlay Pin Badge -->
-                  <div
-                    class="absolute inset-0 bg-primary/20 backdrop-brightness-90 flex items-center justify-center p-4"
-                  >
-                    <div
-                      class="bg-surface-container-lowest/95 backdrop-blur-md px-space-md py-space-sm rounded-lg shadow-xl text-center space-y-1"
-                    >
-                      <div
-                        class="flex items-center justify-center gap-1 text-secondary font-bold font-headline-sm text-headline-sm"
-                      >
-                        <span class="material-symbols-outlined text-[24px]"
-                          >location_on</span
+                    <div class="space-y-1">
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="font-headline-sm text-[16px] text-primary font-bold"
+                          >NW &amp; Limpopo</span
                         >
-                        Alpha Pyrosec HQ
+                        <span
+                          class="font-label-technical text-label-technical px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold"
+                          >REGIONAL</span
+                        >
                       </div>
-                      <div
-                        class="font-body-sm text-body-sm text-on-surface font-medium"
+                      <p
+                        class="font-body-sm text-[12px] text-on-surface-variant leading-normal"
                       >
-                        18 Kinross St, Germiston South
-                      </div>
-                      <div
-                        class="font-label-technical text-label-technical text-on-surface-variant"
+                        Platinum processing in Rustenburg, Brits estates, and
+                        Polokwane extraction complexes.
+                      </p>
+                    </div>
+                    <div
+                      class="text-[11px] text-on-surface font-semibold flex items-center gap-1 pt-1 border-t border-outline-variant/20"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[15px]"
+                        >local_shipping</span
                       >
-                        DIRECT HIGHWAY ACCESS • DISPATCH READY
-                      </div>
+                      <span class="">Mobile Calibration</span>
                     </div>
                   </div>
-                </div>
-                <!-- Bottom Status Strip -->
-                <div
-                  class="p-space-md bg-surface-container-high flex items-center justify-between font-label-technical text-label-technical text-on-surface"
-                >
-                  <span class="">DISPATCH RADIO: CH-04 VHF</span>
-                  <span
-                    class="text-secondary font-bold flex items-center gap-1"
+                  <!-- Nationwide Commercial Contracts -->
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between space-y-space-xs border border-outline-variant/30"
                   >
-                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                    CREWS DEPLOYED
-                  </span>
+                    <div class="space-y-1">
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="font-headline-sm text-[16px] text-primary font-bold"
+                          >National Accounts</span
+                        >
+                        <span
+                          class="font-label-technical text-label-technical px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold"
+                          >TURNKEY</span
+                        >
+                      </div>
+                      <p
+                        class="font-body-sm text-[12px] text-on-surface-variant leading-normal"
+                      >
+                        Standardized multi-site risk maintenance for commercial
+                        landlords &amp; logistics hubs.
+                      </p>
+                    </div>
+                    <div
+                      class="text-[11px] text-on-surface font-semibold flex items-center gap-1 pt-1 border-t border-outline-variant/20"
+                    >
+                      <span
+                        class="material-symbols-outlined text-primary text-[15px]"
+                        >verified_user</span
+                      >
+                      <span class="">Centralized Audits</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -801,21 +1029,31 @@
                 Have an urgent ASIB or insurance audit non-compliance notice?
               </h3>
               <p class="font-body-md text-body-md text-on-primary-container">
-                Alpha Pyrosec delivers rapid rectification engineering, pressure
-                vessel re-certification, and certified SANS sign-offs to satisfy
-                municipal fire departments and underwriting underwriters.
+                Alpha Pyrosec delivers rapid rectification technicians,
+                hydraulic hazard calculations, and Brigit-certified pressure
+                vessel testing to satisfy municipal fire departments and
+                underwriting underwriters.
               </p>
             </div>
             <div
               class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full sm:w-auto"
             >
+              <a
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded bg-surface-container-lowest hover:bg-surface-container-low text-primary font-bold font-label-lg text-label-lg transition-colors shadow-sm cursor-pointer border border-outline-variant/30"
+                href="tel:+27118737593"
+                onclick="handleCopyPhone(event, '+27 (0)11 873-7593')"
+                ><span
+                  class="material-symbols-outlined text-[20px] text-primary"
+                  >content_copy</span
+                ><span class="">Copy Emergency Line (+27 11 873-7593)</span></a
+              >
               <button
-                class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary-container/80 transition-colors shadow-sm cursor-pointer"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded bg-secondary text-on-secondary font-bold font-label-lg text-label-lg hover:bg-secondary-container transition-colors shadow-sm cursor-pointer"
                 onclick="handleCopyDraftEmail(this)"
                 type="button"
               >
                 <span class="material-symbols-outlined text-[20px]"
-                  >content_copy</span
+                  >mark_email_read</span
                 >
                 <span class="">Copy Draft Email</span>
               </button>
@@ -912,7 +1150,7 @@
           >
             <div>
               <div class="font-semibold text-on-surface">
-                Belinda Dos Santos
+                Belinda Dos Santos (CEO)
               </div>
               <a
                 class="text-primary hover:underline font-body-sm text-body-sm"
@@ -921,7 +1159,9 @@
               >
             </div>
             <div>
-              <div class="font-semibold text-on-surface">Rudie Kruger</div>
+              <div class="font-semibold text-on-surface">
+                Rudie Kruger (Commercial Director)
+              </div>
               <a
                 class="text-primary hover:underline font-body-sm text-body-sm"
                 href="mailto:rudie@alphapyro.co.za"
@@ -954,38 +1194,74 @@
       class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-2 flex justify-around items-center text-xs font-semibold shadow-[0_-2px_10px_rgba(0,0,0,0.05)]"
     >
       <a
-        class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-primary transition-colors"
         href="index.html"
-      >
-        <span class="material-symbols-outlined text-[20px]">home</span>
-        <span class="">Home</span>
-      </a>
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Home</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
       <a
-        class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-primary transition-colors"
         href="services.html"
-      >
-        <span class="material-symbols-outlined text-[20px]"
-          >local_fire_department</span
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
         >
-        <span class="">Services</span>
-      </a>
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">Services</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
       <a
-        class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-primary transition-colors"
         href="about.html"
-      >
-        <span class="material-symbols-outlined text-[20px]">info</span>
-        <span class="">About Us</span>
-      </a>
-      <a
-        aria-current="page"
-        class="flex flex-col items-center gap-1 py-1 px-2 text-primary font-bold"
-        href="contact.html"
-      >
-        <span class="material-symbols-outlined text-[20px] font-bold"
-          >contact_phone</span
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-slate-500 hover:text-primary transition-colors"
+        ><svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
         >
-        <span class="">Contact</span>
-      </a>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5">About Us</span
+        ><span class="w-1 h-1 rounded-full bg-transparent mt-0.5"></span
+      ></a>
+      <a
+        href="contact.html"
+        class="flex flex-col items-center justify-center py-1.5 px-3 text-primary font-bold transition-colors"
+        ><svg
+          class="w-5 h-5 text-primary"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          ></path></svg
+        ><span class="text-[11px] leading-tight mt-0.5 font-bold">Contact</span
+        ><span class="w-1 h-1 rounded-full bg-primary mt-0.5"></span
+      ></a>
     </nav>
     <script>
       const draftEmailTemplate = `To: rudie.alphapyrosec@gmail.com
@@ -1065,7 +1341,7 @@ Kind regards,
       }
 
       function handleCopyPhone(event, phoneNumber) {
-        const cleanNumber = phoneNumber || "011 873 7593";
+        const cleanNumber = phoneNumber || "+27 11 873 7593";
         if (navigator.clipboard) {
           navigator.clipboard
             .writeText(cleanNumber)
